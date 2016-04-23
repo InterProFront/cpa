@@ -7,5 +7,6 @@
  */
    return
        [
-        'second' => [],
+        'service' => [],
+        'course' => [],
       ];
