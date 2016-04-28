@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <p class="site-name">Центр промышленного альпинизма</p>
+    <p class="site-name">Центр Промышленного Альпинизма</p>
     <div class="button">
         <a href="/auth/logout" class="logout">Выход</a>
     </div>
@@ -24,12 +24,14 @@
                 <li><span class="menu-title">Страницы</span>
                     <ul>
                         <li><a href="/adm/edit/about">Компания</a></li>
-                        <li><a href="/adm/edit/service">Сервис</a></li>
+                        <li><a href="/adm/edit/study">Учебный центр</a></li>
+                        <li><a href="/adm/edit/safety">Техника безопасности</a></li>
+                        <li><a href="/adm/edit/service">Услуги</a></li>
                         <li><a href="/adm/edit/facts">Факты</a></li>
                         <li><a href="/adm/edit/all">Общее</a></li>
                         <li><a href="/adm/edit/clients">Клиенты</a></li>
-                        <li><a href="/adm/edit/study">Обучение</a></li>
-                        <li><a href="/adm/edit/safety">Техника безопасности</a></li>
+                        <li><a href="/adm/edit/news">Новости</a></li>
+                        <li><a href="/adm/edit/contacts">Контакты</a></li>
                     </ul>
                 </li>
                 <li><span class="menu-title">Специальные блоки</span>

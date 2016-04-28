@@ -29,6 +29,8 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 	Route::get('/edit/clients',         'BackController@getClients');
 	Route::get('/edit/study',           'BackController@getStudy');
 	Route::get('/edit/safety',          'BackController@getSafety');
+	Route::get('/edit/news',          'BackController@getNews');
+	Route::get('/edit/contacts',          'BackController@getContacts');
 
 
 
