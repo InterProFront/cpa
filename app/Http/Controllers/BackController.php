@@ -75,9 +75,11 @@ class BackController extends Controller {
 	public function getStudy(){
 		$all =  $this->queryAgent->getBlock('static_study',[],[]);
 		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		$dom_study = $this->queryAgent->getBlock('dom_study',[],[]);
 		return view('back.blocks.static_study',[
 			'static_study' => $all,
-			'dom_all_images'  => $images
+			'dom_all_images'  => $images,
+			'dom_study'  => $dom_study
 		]);
 	}
 

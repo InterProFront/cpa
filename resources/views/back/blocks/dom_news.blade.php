@@ -1,5 +1,6 @@
 @extends('back.layout')
 @section('content')
+    <?php $title='Новости'?>
     <div class="block ">
         <label class="input-file">
             <input type="text" data-field-type="string" data-field-name="title" data-block="dom_news"
