@@ -73,6 +73,13 @@ return [
             ]
         ]
     ],
+    'dom_all_images' => [
+        'groups' => [
+            'images_set' => [
+                'images'    => ['text_pict']
+            ]
+        ]
+    ],
     'dom_study' => [
         'groups' => [
             'course'=> [
