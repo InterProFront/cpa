@@ -43,9 +43,50 @@ class BackController extends Controller {
 		]);
 	}
 
+	public function getService(){
+		$all =  $this->queryAgent->getBlock('static_service',[],[]);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.static_service',[
+			'static_service' => $all,
+			'dom_all_images'  => $images
+		]);
+	}
 
+	public function getFacts(){
+		$all =  $this->queryAgent->getBlock('static_facts',[],[]);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.static_facts',[
+			'static_facts' => $all,
+			'dom_all_images'  => $images
+		]);
+	}
 
+	public function getClients(){
+		$all =  $this->queryAgent->getBlock('static_clients',[],[]);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.static_clients',[
+			'static_clients' => $all,
+			'dom_all_images'  => $images
+		]);
+	}
 
+	public function getStudy(){
+		$all =  $this->queryAgent->getBlock('static_study',[],[]);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.static_study',[
+			'static_study' => $all,
+			'dom_all_images'  => $images
+		]);
+	}
+
+	public function getSafety(){
+		$all =  $this->queryAgent->getBlock('safety_rules',[],[]);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.safety_rules',[
+			'safety_rules' => $all,
+			'dom_all_images'  => $images
+		]);
+	}
 
 
 

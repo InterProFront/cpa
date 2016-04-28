@@ -21,8 +21,16 @@ Route::controllers([
 
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
-	Route::get('/edit/all',           'BackController@getAll');
-	Route::get('/edit/slider',           'BackController@getSlider');
+	Route::get('/edit/all',           	'BackController@getAll');
+	Route::get('/edit/slider',          'BackController@getSlider');
 	Route::get('/edit/about',           'BackController@getAbout');
+	Route::get('/edit/service',         'BackController@getService');
+	Route::get('/edit/facts',           'BackController@getFacts');
+	Route::get('/edit/clients',         'BackController@getClients');
+	Route::get('/edit/study',           'BackController@getStudy');
+	Route::get('/edit/safety',          'BackController@getSafety');
+
+
+
 
 });
