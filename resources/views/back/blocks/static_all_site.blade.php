@@ -1,5 +1,6 @@
 @extends('back.layout')
 @section('content')
+    <?php $title='Общее'?>
     <div class="block ">
         <label class="input-file">
             <div class="image-load">

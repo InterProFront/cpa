@@ -91,10 +91,10 @@ class BackController extends Controller {
 	}
 
 	public function getNews(){
-		$all =  $this->queryAgent->getBlock('safety_rules',[],[]);
+		$all =  $this->queryAgent->getBlock('dom_news',[],[]);
 		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
-		return view('back.blocks.safety_rules',[
-			'safety_rules' => $all,
+		return view('back.blocks.dom_news',[
+			'dom_news' => $all,
 			'dom_all_images'  => $images
 		]);
 	}
