@@ -46,9 +46,11 @@ class BackController extends Controller {
 	public function getService(){
 		$all =  $this->queryAgent->getBlock('static_service',[],[]);
 		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		$dom_service = $this->queryAgent->getBlock('dom_service',[],[]);
 		return view('back.blocks.static_service',[
 			'static_service' => $all,
-			'dom_all_images'  => $images
+			'dom_all_images'  => $images,
+			'dom_service' => $dom_service
 		]);
 	}
 
