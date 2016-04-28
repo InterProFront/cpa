@@ -23,19 +23,18 @@
             <ul id="menu">
                 <li><span class="menu-title">Страницы</span>
                     <ul>
-                        <li><a href="/adm/edit/about">О школе</a></li>
-                        <li><a href="/adm/edit/reconstruct">Реконструкция</a></li>
-                        <li><a href="/adm/edit/contacts">Контакты</a></li>
+                        <li><a href="/adm/edit/about">Компания</a></li>
+                        <li><a href="/adm/edit/service">Сервис</a></li>
+                        <li><a href="/adm/edit/facts">Факты</a></li>
                         <li><a href="/adm/edit/all">Общее</a></li>
-                        <li><a href="/adm/edit/photo">Фото</a></li>
-                        <li><a href="/adm/edit/blog">Блог</a></li>
-                        <li><a href="/adm/edit/programs">Программы тренировок</a></li>
+                        <li><a href="/adm/edit/clients">Клиенты</a></li>
+                        <li><a href="/adm/edit/study">Обучение</a></li>
+                        <li><a href="/adm/edit/safety">Техника безопасности</a></li>
                     </ul>
                 </li>
                 <li><span class="menu-title">Специальные блоки</span>
                     <ul>
                         <li><a href="/adm/edit/slider">Слайдер</a></li>
-                        <li><a href="/adm/edit/alert">Сообщение на главной</a></li>
                     </ul>
                 </li>
                 <li>
