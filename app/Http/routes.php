@@ -13,9 +13,16 @@
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
-
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+
+Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
+
+	Route::get('/edit/all',           'BackController@getAll');
+	Route::get('/edit/slider',           'BackController@getSlider');
+	Route::get('/edit/about',           'BackController@getAbout');
+
+});
