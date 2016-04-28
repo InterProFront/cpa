@@ -1,23 +1,57 @@
-## Laravel PHP Framework
+#Процесс клонирования Github-проекта(CPA)
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/downloads.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+1\. Копирование репозитория
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+    git clone -b dev https://github.com/InterProFront/cpa
 
-## Official Documentation
+---
+2\. Обновление composer
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
 
-## Contributing
+    composer update
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+---
+3\. Установка пакетов движка interpro:
 
-### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+    composer require interpro/quickstorage 1.0.x-dev
+
+    composer require interpro/imagefilelogic 1.0.x-dev
+
+    composer require interpro/fidback 1.0.x-dev
+
+    composer require interpro/admingenerator 1.0.x-dev
+
+    composer require interpro/placeholder 1.0.x-dev
+
+---
+4\. Создание базы данных
+
+---
+5\. Создатние недостающич файлов и папок
+
+
+    Создать файл .env
+
+    В папке /public создать дерево каталогов
+    - images  
+    - crops  
+    - features  
+    - placeholders  
+
+---
+6\. Добавление стилей и скриптов админ-панели
+
+
+    Перейти в папку /public и выполнить команду
+    
+    git clone https://github.com/interprofront/admin.git
+    
+    
+    Перейти в папку /public/admin и выполнить команду 
+    
+    sudo bower install --allow-root
+
+
+
