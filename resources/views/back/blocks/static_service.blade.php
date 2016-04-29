@@ -20,7 +20,6 @@
                       placeholder="Текст">{{$static_service->about_service_page_field}}</textarea>
         </label>
     </div>
-    @include('back.blocks.dom_service')
     <div class="block buttons">
         <button class="btn btn-primary pull-right any_save" data-block="static_service" data-entity="block"
                 data-descr="">
