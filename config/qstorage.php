@@ -58,7 +58,7 @@ return [
         'title' => 'news',
         'groups' => [
             'news'=> [
-                'stringfields' => ['news_title','news_date','agregator'],
+                'stringfields' => ['link','news_title','news_date','agregator'],
                 'textfields'   => ['about_news'],
             ]
         ]

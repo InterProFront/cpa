@@ -150,7 +150,9 @@ return [
 		'Interpro\Fidback\FidbackServiceProvider',
 		'Intervention\Image\ImageServiceProvider',
 		'Interpro\Placeholder\PlaceholderServiceProvider',
-		'Interpro\AdminGenerator\AdminGeneratorServiceProvider'
+		'Interpro\AdminGenerator\AdminGeneratorServiceProvider',
+		'Interpro\RSS\RSSServiceProvider',
+		'willvincent\Feeds\FeedsServiceProvider'
 
 	],
 
