@@ -11,8 +11,8 @@ return [
     ],
     'slider_slider' => [
         'sizes' => [
-            ['width' => 700, 'height' => null, 'sufix' => 'primary'],
-            ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
+            ['width' => 1000, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 520, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
@@ -20,7 +20,7 @@ return [
     ],
     'static_company_people_photo' => [
         'sizes' => [
-            ['width' => 700, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 200, 'height' => null, 'sufix' => 'primary'],
             ['width' => 500, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
@@ -93,5 +93,7 @@ return [
     'images_set_text_pict' => [
         'sizes' => []
     ],
+
+
 
 ];
