@@ -610,6 +610,8 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
           flex-direction: column;
   padding-left: 0;
   margin-bottom: 120px;
+  background: #ffffff;
+  margin-left: 10%;
 }
 .company.company-big div.service-title-block {
   display: -webkit-box;
