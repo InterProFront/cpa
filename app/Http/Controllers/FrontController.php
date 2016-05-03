@@ -4,81 +4,54 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use Interpro\QuickStorage\Laravel\QueryAgent;
 
 class FrontController extends Controller {
 
-	/**
-	 * Display a listing of the resource.
-	 *
-	 * @return Response
-	 */
-	public function index()
+	function __construct(QueryAgent $queryAgent)
 	{
-		//
+		$this->queryAgent = $queryAgent;
+
+		$all_site = $this->queryAgent->getBlock('static_all_site',[],[]);
+
+		view()->share('static_all_site',$all_site);
 	}
 
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @return Response
-	 */
-	public function create()
-	{
-		//
+	public function getIndex(){
+		$slider  = $this->queryAgent->getBlock('slider_block',[],[]);
+		$company = $this->queryAgent->getBlock('static_company',[],[]);
+		$service = $this->queryAgent->getBlock('static_service',[],[]);
+		$facts   = $this->queryAgent->getBlock('static_facts',[],[]);
+		$clients = $this->queryAgent->getBlock('static_clients',[],[]);
+		return view('front/index/index',[
+			'slider'  => $slider,
+			'company' => $company,
+			'service' => $service,
+			'facts'   => $facts,
+			'clients' => $clients
+		]);
 	}
-
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
-	{
-		//
+	public function getStudy(){
+		$company = $this->queryAgent->getBlock('static_study',[],[]);
+		$study = $this->queryAgent->getBlock('dom_study',[],[]);
+		return view('front/study/study',[
+			's_study' => $company,
+			'study' => $study,
+		]);
 	}
-
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
+	public function getServices(){
+		$company = $this->queryAgent->getBlock('static_service',[],[]);
+		$study = $this->queryAgent->getBlock('dom_service',[],[]);
+		return view('front/service/service',[
+			's_study' => $company,
+			'service' => $study,
+		]);
 	}
-
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
-
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
-
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
+	public function getNews(){
+		$study = $this->queryAgent->getBlock('dom_news',[],[]);
+		return view('front/service/service',[
+			'news' => $study
+		]);
 	}
 
 }

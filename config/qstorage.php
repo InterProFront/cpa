@@ -16,12 +16,13 @@ return [
     ],
     'static_company' => [
         'title' => 'CPA',
-        'textfileds' => ['about_company','say_text'],
+        'textfields' => ['about_company','say_text'],
         'stringfields' => ['people_name','iqsa'],
         'images'       => ['people_photo','iqsa_logo']
     ],
-//   600
+
     'static_service' => [
+        'images' => ['head'],
         'title' => '',
         'textfields' => ['about_services','about_service_page']
     ],
@@ -43,7 +44,8 @@ return [
     ],
     'static_study' => [
         'title' => 'study',
-        'textfileds' => ['about_study']
+        'images' => ['head'],
+        'textfields' => ['about_study']
     ],
     'safety_rules' => [
         'title' => 'safety',
@@ -86,10 +88,16 @@ return [
                 'stringfields' => ['course_title','cost_course'],
                 'textfields' => ['about_course'],
             ],
+            'docs' => [
+                'owner' => 'course',
+                'stringfields'=> ['docs_name']
+            ],
             'course_image'=> [
                 'owner' => 'course',
                 'images' => ['course_pict']
             ]
         ]
     ]
+
+
 ];

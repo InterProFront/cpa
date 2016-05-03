@@ -1,0 +1,19 @@
+button.button{
+  border: none;
+  background: #003764;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px 20px;
+
+  &:focus{
+    outline:none;
+  }
+  &:hover{
+    background: lighten(#003764,20%);
+    cursor: pointer;
+  }
+  &.disabled{
+    cursor: default;
+  }
+}
