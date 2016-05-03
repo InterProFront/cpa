@@ -30,6 +30,15 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 	Route::get('/edit/safety',          'BackController@getSafety');
 	Route::get('/edit/news',            'BackController@getNews');
 	Route::get('/edit/contacts',        'BackController@getContacts');
+
+
+	Route::get('/edit/service/{id}',    'BackController@editService');
+	Route::get('/edit/study/{id}',      'BackController@editStudy');
+	Route::get('/edit/news/{id}',       'BackController@editNews');
+
+
+
+
 });
 
 Route::get('/', 'FrontController@getIndex');

@@ -110,4 +110,36 @@ class BackController extends Controller {
 		]);
 	}
 
+	public function editService($id){
+		$item =  $this->queryAgent->getGroupItem('dom_service','service',$id);
+		$item_service_image =  $this->queryAgent->getGroupItem('dom_service','service_image',$id);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.groupitems.dom_service.service_edit',[
+			'item_service' => $item,
+			'item_service_image' => $item_service_image,
+			'dom_all_images'  => $images
+		]);
+	}
+
+	public function editStudy($id){
+		$item =  $this->queryAgent->getGroupItem('dom_study','course',$id);
+		$item_course_image =  $this->queryAgent->getGroupItem('dom_study','course_image',$id);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.groupitems.dom_study.course_edit',[
+			'item_course' => $item,
+			'item_course_image' => $item_course_image,
+			'dom_all_images'  => $images
+		]);
+	}
+
+	public function editNews($id){
+		$item =  $this->queryAgent->getGroupItem('safety_rules','',$id);
+		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
+		return view('back.blocks.groupitems.',[
+			'' => $item,
+			'dom_all_images'  => $images
+		]);
+	}
+
+
 }

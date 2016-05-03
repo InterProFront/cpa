@@ -66,7 +66,7 @@ return [
     'dom_service' => [
         'groups'=> [
             'service' => [
-                'stringfields' => ['service_name'],
+                'stringfields' => ['service_name','name'],
                 'textfields'   => ['about_service']
             ],
             'service_image' => [
