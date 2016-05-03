@@ -287,12 +287,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/admin_generator.git",
-                "reference": "4a83c58d74a43a1ae12a69f4fc0ac585c1949636"
+                "reference": "7129366f03fde6b6fbfd661c08539acecaa8df91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/admin_generator/zipball/4a83c58d74a43a1ae12a69f4fc0ac585c1949636",
-                "reference": "4a83c58d74a43a1ae12a69f4fc0ac585c1949636",
+                "url": "https://api.github.com/repos/intpro/admin_generator/zipball/7129366f03fde6b6fbfd661c08539acecaa8df91",
+                "reference": "7129366f03fde6b6fbfd661c08539acecaa8df91",
                 "shasum": ""
             },
             "type": "library",
@@ -316,7 +316,7 @@
                 }
             ],
             "description": "admin generator class",
-            "time": "2016-03-20 06:34:14"
+            "time": "2016-05-02 13:25:45"
         },
         {
             "name": "interpro/fidback",
@@ -418,12 +418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/placeholder.git",
-                "reference": "ae3f2b7140606d8074fc947fea204aed23281f48"
+                "reference": "b66a73b118ba6ac758117caa7bebb8f461cd0770"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/placeholder/zipball/ae3f2b7140606d8074fc947fea204aed23281f48",
-                "reference": "ae3f2b7140606d8074fc947fea204aed23281f48",
+                "url": "https://api.github.com/repos/intpro/placeholder/zipball/b66a73b118ba6ac758117caa7bebb8f461cd0770",
+                "reference": "b66a73b118ba6ac758117caa7bebb8f461cd0770",
                 "shasum": ""
             },
             "type": "library",
@@ -453,7 +453,7 @@
             "keywords": [
                 "placeholder"
             ],
-            "time": "2016-04-28 05:27:05"
+            "time": "2016-05-02 13:20:58"
         },
         {
             "name": "interpro/quickstorage",
@@ -461,12 +461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/quickstart.git",
-                "reference": "6473ab8451fd94701715335b56f1d87a4b2fcb29"
+                "reference": "9d9e14babf9b9ff601af071f4a70df31178aa74f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/quickstart/zipball/6473ab8451fd94701715335b56f1d87a4b2fcb29",
-                "reference": "6473ab8451fd94701715335b56f1d87a4b2fcb29",
+                "url": "https://api.github.com/repos/intpro/quickstart/zipball/9d9e14babf9b9ff601af071f4a70df31178aa74f",
+                "reference": "9d9e14babf9b9ff601af071f4a70df31178aa74f",
                 "shasum": ""
             },
             "type": "library",
@@ -496,7 +496,7 @@
             "keywords": [
                 "qstorage"
             ],
-            "time": "2016-04-28 07:05:04"
+            "time": "2016-04-28 16:06:03"
         },
         {
             "name": "intervention/image",
