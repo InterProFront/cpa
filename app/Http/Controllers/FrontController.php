@@ -3,8 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
 use Interpro\QuickStorage\Laravel\QueryAgent;
+use Illuminate\Http\Request;
 
 class FrontController extends Controller {
 
