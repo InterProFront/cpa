@@ -61,7 +61,7 @@
             <div class="service-row">
                 <div class="col-1-2">
                     <div class="block-title">{{$service->title_field}}</div>
-                    {!! $service->about_services_page_field  !!}
+                    {!! $service->about_service_page_field  !!}
                     <p><a href="#" class="link">Перейти к услугам</a></p>
                 </div>
                 <div class="col-1-2">
