@@ -9,7 +9,7 @@
                     <img src="/images/{{$item->slider_image->primary_link}}" alt="{{$item->slider_image->alt}}" class="slide-image">
                     <div class="text-wrap">
                         <p class="slide-name">{{$item->slide_name_field}}</p>
-                        <p class="slide-text">{{$item->slide_text_field}}</p>
+                        <p class="slide-text">{!! $item->slide_text_field !!}</p>
                     </div>
                 </li>
                 @endforeach
