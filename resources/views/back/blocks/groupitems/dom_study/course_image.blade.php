@@ -42,7 +42,7 @@
                                data-block="dom_study">
                         <label class="file-input">
                             Загрузить
-                            <input type="file" accept="image/*" class="input_file block_field"
+                            <input type="file" accept="image/*" class="input_file group_field"
                                    data-field-name="course_pict" data-field-type="image" data-block="dom_study"
                                    data-group="course_image" data-item-id="{{$item_course_image->id_field}}"
                                    data-entity="groupitem">

@@ -23,7 +23,7 @@
                 <input type="text" placeholder="alt текст" class="alt-text" value="{{$item_slider->slider_image->alt}}" data-item-id="{{$item_slider->id_field}}" data-field-name="slider" data-block="slider_block">
                 <label class="file-input">
                     Загрузить
-                    <input type="file" accept="image/*" class="input_file block_field" data-field-name="slider" data-field-type="image" data-block="slider_block" data-group="slider" data-item-id="{{$item_slider->id_field}}" data-entity="groupitem">
+                    <input type="file" accept="image/*" class="input_file group_field" data-field-name="slider" data-field-type="image" data-block="slider_block" data-group="slider" data-item-id="{{$item_slider->id_field}}" data-entity="groupitem">
                 </label>
             </div>
         </div>

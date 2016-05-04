@@ -23,7 +23,7 @@
                 <input type="text" placeholder="alt текст" class="alt-text" value="{{$item_fact->fact_pict_image->alt}}" data-item-id="{{$item_fact->id_field}}" data-field-name="fact_pict" data-block="static_facts">
                 <label class="file-input">
                     Загрузить
-                    <input type="file" accept="image/*" class="input_file block_field" data-field-name="fact_pict" data-field-type="image" data-block="static_facts" data-group="fact" data-item-id="{{$item_fact->id_field}}" data-entity="groupitem">
+                    <input type="file" accept="image/*" class="input_file group_field" data-field-name="fact_pict" data-field-type="image" data-block="static_facts" data-group="fact" data-item-id="{{$item_fact->id_field}}" data-entity="groupitem">
                 </label>
             </div>
         </div>

@@ -40,7 +40,7 @@
                                data-block="dom_service">
                         <label class="file-input">
                             Загрузить
-                            <input type="file" accept="image/*" class="input_file block_field"
+                            <input type="file" accept="image/*" class="input_file group_field"
                                    data-field-name="serv_pict" data-field-type="image" data-block="dom_service"
                                    data-group="service_image" data-item-id="{{$item_service_image->id_field}}"
                                    data-entity="groupitem">

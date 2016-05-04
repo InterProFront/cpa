@@ -23,7 +23,7 @@
                 <input type="text" placeholder="alt текст" class="alt-text" value="{{$item_client->client_pict_image->alt}}" data-item-id="{{$item_client->id_field}}" data-field-name="client_pict" data-block="static_clients">
                 <label class="file-input">
                     Загрузить
-                    <input type="file" accept="image/*" class="input_file block_field" data-field-name="client_pict" data-field-type="image" data-block="static_clients" data-group="client" data-item-id="{{$item_client->id_field}}" data-entity="groupitem">
+                    <input type="file" accept="image/*" class="input_file group_field" data-field-name="client_pict" data-field-type="image" data-block="static_clients" data-group="client" data-item-id="{{$item_client->id_field}}" data-entity="groupitem">
                 </label>
             </div>
         </div>
