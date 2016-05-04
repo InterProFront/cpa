@@ -27,7 +27,7 @@
             </div>
             <div class="cost">
                 <p class="text">Стоимость курса</p>
-                <p class="price">35 500 тг</p>
+                <p class="price">{{$item->cost_course_field}}</p>
                 <button class="button join" href="#join">Записаться</button>
             </div>
         </div>
