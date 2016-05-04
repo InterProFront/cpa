@@ -6,7 +6,7 @@
             <ul class="slider-content">
                @foreach($slider->slider_group as $item)
                 <li class="slide">
-                    <img src="/images/{{$item->slider_image->primary_link}}" alt="{{$item->slider_image->alt_link}}" class="slide-image">
+                    <img src="/images/{{$item->slider_image->primary_link}}" alt="{{$item->slider_image->alt}}" class="slide-image">
                     <div class="text-wrap">
                         <p class="slide-name">{{$item->slide_name_field}}</p>
                         <p class="slide-text">{{$item->slide_text_field}}</p>
