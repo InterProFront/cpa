@@ -22,7 +22,7 @@
         <div class="company index">
             <div class="col-1-1">
                 <h1 class="block-title">{{$company->title_field}}</h1>
-                {{$company->about_company_field}}
+                {!! $company->about_company_field !!}
             </div>
             <div class="col-1-1">
 
@@ -61,7 +61,7 @@
             <div class="service-row">
                 <div class="col-1-2">
                     <div class="block-title">{{$service->title_field}}</div>
-                    {{$service->about_services_field}}
+                    {!! $service->about_services_field  !!}
                     <p><a href="#" class="link">Перейти к услугам</a></p>
                 </div>
                 <div class="col-1-2">
