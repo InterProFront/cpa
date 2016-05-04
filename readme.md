@@ -36,9 +36,9 @@
 
     В папке /public создать дерево каталогов
     - images  
-    - crops  
-    - features  
-    - placeholders  
+        - crops  
+        - features  
+        - placeholders  
 
 ---
 6\. Добавление стилей и скриптов админ-панели

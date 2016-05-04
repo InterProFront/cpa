@@ -3,7 +3,7 @@
 @section('content')
     <section class="content">
         <div class="head-image">
-            <img src="{{$news->head_image->primary_link}}" alt="">
+            <img src="/images/{{$news->head_image->primary_link}}" alt="">
         </div>
 
         @include('front.news.menu')
@@ -17,20 +17,12 @@
                     <div class="col-1-2">
                         <div class="big-news-wrap">
                             <ul class="big-news">
-                                <li class="news">
-                                    <p class="title"><a href="#">В Москве разбился промышленный альпинист.</a></p>
-                                    <p class="small">20 марта 2015 • <a href="#">tengrinews.kz</a></p>
-                                </li>
-                                <li class="news">
-                                    <p class="title"><a href="#">Крупная авария на нефтенной платформе унесла жизни 5
-                                            рабочих.</a></p>
-                                    <p class="small">20 марта 2015 • <a href="#">tengrinews.kz</a></p>
-                                </li>
-                                <li class="news">
-                                    <p class="title"><a href="#">Еще одна новость с больщим заголовком про промышленных
-                                            альпинистов</a></p>
-                                    <p class="small">20 марта 2015 • <a href="#">tengrinews.kz</a></p>
-                                </li>
+                                @foreach($news_big as $item)
+                                    <li class="news" data-id="{{$item->id_field}}">
+                                        <p class="title"><a href="{{$item->link_field}}">{{$item->news_title_field}}</a></p>
+                                        <p class="small">{{$item->news_date_field}}  •  <a href="#">{{$item->agregator_field}}</a></p>
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>

@@ -49,6 +49,7 @@ return [
     ],
     'safety_rules' => [
         'title' => 'safety',
+        'images' => ['head'],
         'textfields' => ['rules_text']
     ],
 
@@ -86,7 +87,7 @@ return [
     'dom_study' => [
         'groups' => [
             'course'=> [
-                'stringfields' => ['course_title','cost_course'],
+                'stringfields' => ['course_title','cost_course', 'name'],
                 'textfields' => ['about_course'],
             ],
             'docs' => [

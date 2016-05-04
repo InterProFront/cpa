@@ -11,6 +11,7 @@
 |
 */
 
+Route::get('home', 'HomeController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -19,6 +20,8 @@ Route::controllers([
 
 
 Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
+
+	Route::get('/', 					'BackController@getIndex');
 
 	Route::get('/edit/all',           	'BackController@getAll');
 	Route::get('/edit/slider',          'BackController@getSlider');
@@ -33,7 +36,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
 
 	Route::get('/edit/service/{id}',    'BackController@editService');
-	Route::get('/edit/study/{id}',      'BackController@editStudy');
+	Route::get('/edit/course/{id}',      'BackController@editCourse');
 	Route::get('/edit/news/{id}',       'BackController@editNews');
 
 
@@ -49,5 +52,5 @@ Route::get('/services', 'FrontController@getServices');
 
 Route::get('/news', 'FrontController@getNews');
 Route::get('/news/more/{id}', 'FrontController@getMore');
-Route::get('/news/{agr}/more/{id}', 'FrontController@getMore');
+Route::get('/news/{agr}/more/{id}', 'FrontController@getMoreAgr');
 Route::get('/news/{agr}', 'FrontController@getNewsAgr');

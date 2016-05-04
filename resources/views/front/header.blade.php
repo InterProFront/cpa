@@ -3,7 +3,7 @@
     <div class="head">
         <div class="col-1-1">
             <div class="logo">
-                <img src="images/logo.png" alt="" class="logo">
+                <img src="/images/{{$all_site->logo_image->primary_link}}" alt="" class="logo">
             </div>
             <div class="text">
                 <ul>

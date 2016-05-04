@@ -3,8 +3,8 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
 use Interpro\QuickStorage\Laravel\QueryAgent;
+use Illuminate\Http\Request;
 
 class FrontController extends Controller {
 
@@ -14,7 +14,7 @@ class FrontController extends Controller {
 
 		$all_site = $this->queryAgent->getBlock('static_all_site',[],[]);
 
-		view()->share('static_all_site',$all_site);
+		view()->share('all_site',$all_site);
 	}
 
 	public function getIndex(){
@@ -49,33 +49,45 @@ class FrontController extends Controller {
 	}
 	public function getNews(){
 		$study = $this->queryAgent->getBlock('dom_news',[],[]);
-		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],[],['take' => 2, 'skip' =>0]);
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',[['news'=>['sorter' => 'DESC']]],[],['news'=>['take'=>9, 'skip'=>4]]);
+		$news_big = $this->queryAgent->getGroupFlat('dom_news','news',[['news'=>['sorter' => 'DESC']]],[],['news'=>['take'=>3, 'skip'=>1]]);
 		$agregators = config('rss')['links'];
 
 		return view('front/news/news',[
 			'news' => $study,
 			'small_news' => $news,
+			'news_big' => $news_big,
 			'agr'  => $agregators
 		]);
 	}
 	public function getNewsAgr($agr){
 		$study = $this->queryAgent->getBlock('dom_news',[],[]);
-		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],['news'=>['agregator'=>$agr]],[]);
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',[['news'=>['sorter' => 'DESC']]],['news'=>['agregator'=>$agr]],['news'=>['take'=>9, 'skip'=>4]]);
+		$news_big = $this->queryAgent->getGroupFlat('dom_news','news',[['news'=>['sorter' => 'DESC']]],[],['news'=>['take'=>3, 'skip'=>1]]);
 		$agregators = config('rss')['links'];
 		return view('front/news/news_agr',[
 			'news' => $study,
-			'news_item' => $news,
+			'small_news' => $news,
+			'news_big' => $news_big,
 			'agr'  => $agregators
 		]);
 	}
 	public  function getMore($id){
-		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],[],['take' => 6, 'skip' => $id]);
-		$rendered =  view('front/news/small_news',[ 'news' => $news])->render();
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',['news'=>['sorter' => 'DESC']],[],['news'=>['take'=>3, 'skip'=>$id]]);
+		$rendered =  view('front/news/small_news',[ 'small_news' => $news])->render();
 		return ['complhtml' => $rendered];
 	}
-	public  function getMoreAgr($id, $agr){
-		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],['news'=>['agregator'=>$agr]],['take' => 6, 'skip' => $id]);
-		$rendered =  view('front/news/small_news',[ 'news' => $news])->render();
+	public  function getMoreAgr($agr,$id){
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',['news'=>['sorter' => 'DESC']],['news'=>['agregator'=>$agr]],['news'=>['take'=>3, 'skip'=>$id]]);
+		$rendered =  view('front/news/small_news',[ 'small_news' => $news])->render();
 		return ['complhtml' => $rendered];
+	}
+	public function getTb(){
+		$rules = $this->queryAgent->getBlock('safety_rules',[],[]);
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',['news'=>['sorter'=>'DESC']],[],['news'=>['take'=>6,'skip'=>1]]);
+		return view('front/tb/tb',[
+			'rules' => $rules,
+			'news'  => $news
+		]);
 	}
 }

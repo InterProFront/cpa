@@ -83,16 +83,15 @@ $(document).ready(function(){
     });
     //give a more news
     $('.more-news').on('click',function(){
-        var id  =  $('.small-news .news').last().data('id');
+        var id  =  $('.small-news .news').length;
         var deffered = $.ajax({
             type: 'GET',
-            url: window.location.pathname+'/more/'+id
+            url: window.location.pathname+'/more/'+(id+1)
         });
         deffered.done(function(data){
-
+            $('.small-news').append(data.complhtml);
         });
         deffered.success(function(data){
-            $('.small-news').appendTo(data.complhtml);
         });
         deffered.fail(function(){
 
