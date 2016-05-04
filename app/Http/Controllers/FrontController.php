@@ -68,7 +68,7 @@ class FrontController extends Controller {
 			'agr'  => $agregators
 		]);
 	}
-	public  function getMore($id, $agr = ''){
+	public  function getMore($id){
 		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],[],['take' => 6, 'skip' => $id]);
 		$rendered =  view('front/news/small_news',[ 'news' => $news])->render();
 		return ['complhtml' => $rendered];
