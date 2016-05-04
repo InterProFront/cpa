@@ -13,7 +13,7 @@
                 <div class="wrap">
                     <div class="col">
                         <h1 class="big-title"> {{$rules->title_field}}</h1>
-                        {{$rules->rules_text_field}}
+                        {!! $rules->rules_text_field !!}
                     </div>
                     <div class="col new">
                         <h4 class="title">

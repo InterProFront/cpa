@@ -2,7 +2,7 @@
 
 return [
     'block_name' => 'dom_news',
-    'limit' => 15,
+    'limit' => 5,
     'links' => [
         'tengrinews.kz' => 'https://tengrinews.kz/news.rss',
         'nur.kz' => 'https://www.nur.kz/rss/all.rss',
