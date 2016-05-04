@@ -1,17 +1,18 @@
 @extends('front.layout')
-<?php $title = 'Центр промышленного альпинизма'?>
+<?php $title = 'Центр Промышленного Альпинизма'?>
 @section('content')
     <section class="content">
         <div class="slider-wrapper">
             <ul class="slider-content">
-               @foreach($slider->slider_group as $item)
-                <li class="slide">
-                    <img src="/images/{{$item->slider_image->primary_link}}" alt="{{$item->slider_image->alt}}" class="slide-image">
-                    <div class="text-wrap">
-                        <p class="slide-name">{{$item->slide_name_field}}</p>
-                        <p class="slide-text">{!! $item->slide_text_field !!}</p>
-                    </div>
-                </li>
+                @foreach($slider->slider_group as $item)
+                    <li class="slide">
+                        <img src="/images/{{$item->slider_image->primary_link}}" alt="{{$item->slider_image->alt}}"
+                             class="slide-image">
+                        <div class="text-wrap">
+                            <p class="slide-name">{{$item->slide_name_field}}</p>
+                            <p class="slide-text">{!! $item->slide_text_field !!}</p>
+                        </div>
+                    </li>
                 @endforeach
             </ul>
         </div>
@@ -28,7 +29,8 @@
 
                 <div class="people">
                     <div class="wrap">
-                        <img src="/images/{{$company->people_photo_image->primary_link}}" alt="{{$company->people_photo_image->alt}}" class="photo">
+                        <img src="/images/{{$company->people_photo_image->primary_link}}"
+                             alt="{{$company->people_photo_image->alt}}" class="photo">
                         <p class="name">{{$company->people_name_field}}</p>
                     </div>
                     <p class="say">{{$company->say_text_field}}</p>
@@ -83,7 +85,7 @@
                 @foreach($facts->fact_group as $item)
                     <li class="fact"><img src="/images/{{$item->fact_pict_image->primary_link}}" alt="">
                         <p class="fact_text">
-                           {!! $item->fact_title_field !!}
+                            {!! $item->fact_title_field !!}
                         </p>
                     </li>
                 @endforeach
@@ -93,7 +95,8 @@
             <h2 class="medium-title">Среди клиентов</h2>
             <ul class="clients-block">
                 @foreach($clients->client_group as $item)
-                    <li class="client"><a href="{{$item->client_link_field}}"><img src="/images/{{$item->client_pict_image->primary_link}}" alt=""></a></li>
+                    <li class="client"><a href="{{$item->client_link_field}}"><img
+                                    src="/images/{{$item->client_pict_image->primary_link}}" alt=""></a></li>
                 @endforeach
             </ul>
         </div>

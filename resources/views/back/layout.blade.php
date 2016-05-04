@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Тест админки</title>
+    <title>{{{ $title or 'Панель управления Центр Промышленного Альпинизма' }}}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="/Admin/js/jquery-1.8.3.js"></script>
 

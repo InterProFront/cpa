@@ -1,5 +1,5 @@
 @extends('front.layout')
-<?php $title = 'Центр промышленного альпинизма'?>
+<?php $title = 'Учебный центр — Центр Промышленного Альпинизма'?>
 @section('content')
     <section class="content">
         <div class="head-image">

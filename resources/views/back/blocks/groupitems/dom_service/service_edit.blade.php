@@ -1,5 +1,6 @@
 @extends('back.layout')
 @section('content')
+    <?php $title = 'Услуги — ' . $item_service->service_name_field?>
     <li class="group" data-group-id="{{$item_service->id_field}}">
         <div class="block ">
             <div class="field-wrap ">
