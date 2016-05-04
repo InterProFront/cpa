@@ -10,7 +10,7 @@
         <div class="company company-big">
             <h1 class="big-title">{{$s_study->title_field}}</h1>
             <div class="full-size-descr">
-                {{$s_study->about_services_field}}
+                {!! $s_study->about_services_field !!}
             </div>
             <?php $i = 0?>
             @foreach($service->service_group as $item)

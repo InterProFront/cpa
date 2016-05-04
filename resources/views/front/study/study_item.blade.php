@@ -3,7 +3,7 @@
     <div class="wrap">
         <div class="col">
             <h2 class="medium-title">{{$item->course_title_field}}</h2>
-            {{$item->about_course_field}}
+            {!!$item->about_course_field!!}
             <div class="docs">
                 <h4 class="title">
                     Выдаваемые документы

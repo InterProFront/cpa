@@ -3,7 +3,7 @@
     <div class="wrap">
         <div class="col">
             <h2 class="medium-title">{{$item->service_name_field}}</h2>
-            {{$item->about_service_field}}
+            {!! $item->about_service_field !!}
             <p><a href="#">Оформить заявку</a></p>
         </div>
         <div class="col">
