@@ -266,6 +266,9 @@ nav.main-menu ul.menu div.popup-menu li.item {
   background: #13191f;
   width: auto;
 }
+nav.main-menu ul.menu div.popup-menu li.item:last-child {
+  padding-right: 32px;
+}
 nav.main-menu ul.menu div.popup-menu li.item a.menu-item {
   display: inline-block;
   color: #FFFFFF;
@@ -277,11 +280,11 @@ nav.main-menu ul.menu div.popup-menu li.item:hover {
 }
 nav.main-menu ul.menu div.popup-menu li.item:hover a.menu-item {
   color: #ff6666;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#ffcdcd), to(#ffcdcd));
-  background: -webkit-linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#ffcdcd), color-stop(90%, #ffcdcd));
-  background: -webkit-linear-gradient(right, #ffcdcd, #ffcdcd 90%);
-  background: linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#6b4044), to(#6b4044));
+  background: -webkit-linear-gradient(to left, #6b4044, #6b4044 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#6b4044), color-stop(90%, #6b4044));
+  background: -webkit-linear-gradient(right, #6b4044, #6b4044 90%);
+  background: linear-gradient(to left, #6b4044, #6b4044 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@link-border-hover', endColorstr='@link-border-hover', GradientType=0);
   background-position: 0 97%;
   background-size: 10px 1px;
@@ -628,13 +631,14 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
       -ms-flex-align: start;
           align-items: flex-start;
   padding-bottom: 30px;
+  margin-top: 30px;
 }
 .company.company-big div.service-title-block h1.big-title {
   vertical-align: top;
   font-size: 48px;
   font-weight: normal;
   position: relative;
-  margin-top: 10px;
+  margin-top: 0px;
   color: #333333;
   margin-bottom: 0;
   padding-left: 0;
@@ -668,6 +672,7 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   color: #333333;
   margin-bottom: 0;
   padding-left: 60px;
+  margin-top: 30px;
 }
 .company.company-big .full-size-descr {
   background: url(../images/rope.png) no-repeat top left;
@@ -689,6 +694,96 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
 }
 .company.company-big .study-block {
   padding: 45px 50px 0 0;
+}
+.company.company-big .study-block.news {
+  padding: 50px 30px 50px 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 0;
+  -webkit-flex-basis: 900px;
+      -ms-flex-preferred-size: 900px;
+          flex-basis: 900px;
+  max-width: 900px;
+}
+.company.company-big .study-block.news .wrap {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 60px;
+}
+.company.company-big .study-block.news .wrap .col:first-child {
+  margin-left: 0;
+  -webkit-flex-basis: 700px;
+      -ms-flex-preferred-size: 700px;
+          flex-basis: 700px;
+  max-width: 500px;
+}
+.company.company-big .study-block.news .wrap .col:first-child h1.big-title {
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 35px;
+}
+.company.company-big .study-block.news .wrap .col:first-child p {
+  padding-left: 0;
+  max-width: 500px;
+  padding-bottom: 0;
+  margin-bottom: 25px;
+}
+.company.company-big .study-block.news .wrap .col:first-child h3 {
+  margin-top: 50px;
+  color: #333333;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+.company.company-big .study-block.news .wrap .col:last-child {
+  -webkit-flex-basis: 220px;
+      -ms-flex-preferred-size: 220px;
+          flex-basis: 220px;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new {
+  padding: 20px 20px 20px 30px;
+  background: #fff2d8;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new h4.title {
+  font-size: 24px;
+  font-weight: normal;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new .news {
+  margin-bottom: 50px;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new .news p.news-title {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new .news p.news-title a {
+  color: #666666;
+  font-size: 16px;
+  font-weight: normal;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new .news p.news-title a:hover {
+  color: #ff6666;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new .news p.small {
+  font-size: 12px;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new .news p.small a {
+  color: #666666;
+  font-weight: normal;
+}
+.company.company-big .study-block.news .wrap .col:last-child.new .news p.small a:hover {
+  color: #ff6666;
 }
 .company.company-big .study-block:last-child .wrap {
   border-bottom: none;
@@ -843,6 +938,145 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
 .company.company-big .study-block .wrap h4.title {
   color: #333333;
 }
+.company.company-big .service-title-block h1.big-title {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 5px;
+}
+.company.company-big .news-block {
+  padding-left: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.company.company-big .news-block .news-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child {
+  padding-top: 10px;
+  -webkit-flex-basis: 60%;
+      -ms-flex-preferred-size: 60%;
+          flex-basis: 60%;
+  margin-right: 40px;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news {
+  margin-bottom: 50px;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news p.title {
+  font-size: 24px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news p.title a {
+  color: #666666;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news p.title a:hover {
+  color: #006699;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news p.small {
+  font-size: 12px;
+  color: #666666;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news p.small a {
+  color: #666666;
+}
+.company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news p.small a:hover {
+  color: #006699;
+}
+.company.company-big .news-block .news-top .col-1-2:last-child {
+  -webkit-flex-basis: 240px;
+      -ms-flex-preferred-size: 240px;
+          flex-basis: 240px;
+}
+.company.company-big .news-block .news-top .col-1-2:last-child .news-sources {
+  background: #e5e5e5;
+  padding: 15px 20px 20px 20px;
+}
+.company.company-big .news-block .news-top .col-1-2:last-child .news-sources .small-title {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.company.company-big .news-block .news-top .col-1-2:last-child .news-sources .sources li.source-item {
+  margin-bottom: 10px;
+}
+.company.company-big .news-block .news-top .col-1-2:last-child .news-sources .sources li.source-item a {
+  color: #006699;
+}
+.company.company-big .news-block .news-top .col-1-2:last-child .news-sources .sources li.source-item a:hover {
+  color: #ff6666;
+}
+.company.company-big .news-block .news-all {
+  padding-top: 50px;
+}
+.company.company-big .news-block .news-all .small-news {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.company.company-big .news-block .news-all .small-news li.news {
+  -webkit-flex-basis: 30.33333%;
+      -ms-flex-preferred-size: 30.33333%;
+          flex-basis: 30.33333%;
+  padding-bottom: 60px;
+}
+.company.company-big .news-block .news-all .small-news li.news:not(:nth-child(3n)) {
+  margin-right: 3%;
+}
+.company.company-big .news-block .news-all .small-news li.news .title {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 7px;
+}
+.company.company-big .news-block .news-all .small-news li.news .title a {
+  color: #666666;
+}
+.company.company-big .news-block .news-all .small-news li.news .title a:hover {
+  color: #006699;
+}
+.company.company-big .news-block .news-all .small-news li.news .small {
+  font-size: 12px;
+  color: #666666;
+}
+.company.company-big .news-block .news-all .small-news li.news .small a {
+  color: #666666;
+}
+.company.company-big .news-block .news-all .small-news li.news .small a:hover {
+  color: #006699;
+}
+.company.company-big .news-block p.more {
+  padding-top: 10px;
+  padding-bottom: 90px;
+}
+.company.company-big .news-block p.more a.more-news {
+  font-size: 42px;
+  color: #006699;
+}
+.company.company-big .news-block p.more a.more-news:hover {
+  color: #ff6666;
+}
 footer.footer {
   background: #13191f;
 }
@@ -904,12 +1138,12 @@ footer.footer .foot .col-1-2:first-child p.copy {
   padding-bottom: 0;
 }
 footer.footer .foot .col-1-2:first-child p a {
-  color: #006699;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#72afdb), to(#72afdb));
-  background: -webkit-linear-gradient(to left, #72afdb, #72afdb 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#72afdb), color-stop(90%, #72afdb));
-  background: -webkit-linear-gradient(right, #72afdb, #72afdb 90%);
-  background: linear-gradient(to left, #72afdb, #72afdb 90%);
+  color: #66ccff;
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#2c4f63), to(#2c4f63));
+  background: -webkit-linear-gradient(to left, #2c4f63, #2c4f63 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#2c4f63), color-stop(90%, #2c4f63));
+  background: -webkit-linear-gradient(right, #2c4f63, #2c4f63 90%);
+  background: linear-gradient(to left, #2c4f63, #2c4f63 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c2', endColorstr='@c2', GradientType=0);
   background-position: 0 99%;
   background-size: 10px 1px;
@@ -917,11 +1151,11 @@ footer.footer .foot .col-1-2:first-child p a {
 }
 footer.footer .foot .col-1-2:first-child p a:hover {
   color: #ff6666;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#ffcdcd), to(#ffcdcd));
-  background: -webkit-linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#ffcdcd), color-stop(90%, #ffcdcd));
-  background: -webkit-linear-gradient(right, #ffcdcd, #ffcdcd 90%);
-  background: linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#6b4044), to(#6b4044));
+  background: -webkit-linear-gradient(to left, #6b4044, #6b4044 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#6b4044), color-stop(90%, #6b4044));
+  background: -webkit-linear-gradient(right, #6b4044, #6b4044 90%);
+  background: linear-gradient(to left, #6b4044, #6b4044 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c4', endColorstr='@c4', GradientType=0);
   background-position: 0 97%;
   background-size: 10px 1px;
@@ -965,12 +1199,12 @@ footer.footer .foot .col-1-2:last-child ul.contacts li p {
   line-height: 21px;
 }
 footer.footer .foot .col-1-2:last-child ul.contacts li p a {
-  color: #006699;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#72afdb), to(#72afdb));
-  background: -webkit-linear-gradient(to left, #72afdb, #72afdb 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#72afdb), color-stop(90%, #72afdb));
-  background: -webkit-linear-gradient(right, #72afdb, #72afdb 90%);
-  background: linear-gradient(to left, #72afdb, #72afdb 90%);
+  color: #66ccff;
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#2c4f63), to(#2c4f63));
+  background: -webkit-linear-gradient(to left, #2c4f63, #2c4f63 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#2c4f63), color-stop(90%, #2c4f63));
+  background: -webkit-linear-gradient(right, #2c4f63, #2c4f63 90%);
+  background: linear-gradient(to left, #2c4f63, #2c4f63 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c2', endColorstr='@c2', GradientType=0);
   background-position: 0 99%;
   background-size: 10px 1px;
@@ -978,11 +1212,11 @@ footer.footer .foot .col-1-2:last-child ul.contacts li p a {
 }
 footer.footer .foot .col-1-2:last-child ul.contacts li p a:hover {
   color: #ff6666;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#ffcdcd), to(#ffcdcd));
-  background: -webkit-linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#ffcdcd), color-stop(90%, #ffcdcd));
-  background: -webkit-linear-gradient(right, #ffcdcd, #ffcdcd 90%);
-  background: linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#6b4044), to(#6b4044));
+  background: -webkit-linear-gradient(to left, #6b4044, #6b4044 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#6b4044), color-stop(90%, #6b4044));
+  background: -webkit-linear-gradient(right, #6b4044, #6b4044 90%);
+  background: linear-gradient(to left, #6b4044, #6b4044 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c4', endColorstr='@c4', GradientType=0);
   background-position: 0 97%;
   background-size: 10px 1px;
@@ -994,12 +1228,12 @@ footer.footer .foot .col-1-2:last-child p {
   color: #ffffff;
 }
 footer.footer .foot .col-1-2:last-child p a {
-  color: #006699;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#72afdb), to(#72afdb));
-  background: -webkit-linear-gradient(to left, #72afdb, #72afdb 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#72afdb), color-stop(90%, #72afdb));
-  background: -webkit-linear-gradient(right, #72afdb, #72afdb 90%);
-  background: linear-gradient(to left, #72afdb, #72afdb 90%);
+  color: #66ccff;
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#2c4f63), to(#2c4f63));
+  background: -webkit-linear-gradient(to left, #2c4f63, #2c4f63 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#2c4f63), color-stop(90%, #2c4f63));
+  background: -webkit-linear-gradient(right, #2c4f63, #2c4f63 90%);
+  background: linear-gradient(to left, #2c4f63, #2c4f63 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c2', endColorstr='@c2', GradientType=0);
   background-position: 0 99%;
   background-size: 10px 1px;
@@ -1007,11 +1241,11 @@ footer.footer .foot .col-1-2:last-child p a {
 }
 footer.footer .foot .col-1-2:last-child p a:hover {
   color: #ff6666;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#ffcdcd), to(#ffcdcd));
-  background: -webkit-linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#ffcdcd), color-stop(90%, #ffcdcd));
-  background: -webkit-linear-gradient(right, #ffcdcd, #ffcdcd 90%);
-  background: linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#6b4044), to(#6b4044));
+  background: -webkit-linear-gradient(to left, #6b4044, #6b4044 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#6b4044), color-stop(90%, #6b4044));
+  background: -webkit-linear-gradient(right, #6b4044, #6b4044 90%);
+  background: linear-gradient(to left, #6b4044, #6b4044 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c4', endColorstr='@c4', GradientType=0);
   background-position: 0 97%;
   background-size: 10px 1px;
@@ -1056,6 +1290,11 @@ footer.footer .foot .col-1-2:last-child p a:hover {
           box-sizing: border-box;
   color: #333333;
   line-height: 20px;
+}
+.white-popup .row .input:focus,
+.white-popup .row .input:hover {
+  outline: none;
+  border: 1px solid #E9202B;
 }
 .white-popup .row:last-of-type {
   text-align: right;

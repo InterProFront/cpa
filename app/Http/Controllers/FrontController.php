@@ -49,9 +49,33 @@ class FrontController extends Controller {
 	}
 	public function getNews(){
 		$study = $this->queryAgent->getBlock('dom_news',[],[]);
-		return view('front/service/service',[
-			'news' => $study
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],[],['take' => 2, 'skip' =>0]);
+		$agregators = config('rss')['links'];
+
+		return view('front/news/news',[
+			'news' => $study,
+			'small_news' => $news,
+			'agr'  => $agregators
 		]);
 	}
-
+	public function getNewsAgr($agr){
+		$study = $this->queryAgent->getBlock('dom_news',[],[]);
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],['news'=>['agregator'=>$agr]],[]);
+		$agregators = config('rss')['links'];
+		return view('front/news/news_agr',[
+			'news' => $study,
+			'news_item' => $news,
+			'agr'  => $agregators
+		]);
+	}
+	public  function getMore($id, $agr = ''){
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],[],['take' => 6, 'skip' => $id]);
+		$rendered =  view('front/news/small_news',[ 'news' => $news])->render();
+		return ['complhtml' => $rendered];
+	}
+	public  function getMoreAgr($id, $agr){
+		$news = $this->queryAgent->getGroupFlat('dom_news','news',[],['news'=>['agregator'=>$agr]],['take' => 6, 'skip' => $id]);
+		$rendered =  view('front/news/small_news',[ 'news' => $news])->render();
+		return ['complhtml' => $rendered];
+	}
 }

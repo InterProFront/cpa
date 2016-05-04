@@ -46,4 +46,8 @@ Route::get('/study', 'FrontController@getStudy');
 Route::get('/tb', 'FrontController@getTb');
 Route::get('/contacts', 'FrontController@getContacts');
 Route::get('/services', 'FrontController@getServices');
+
 Route::get('/news', 'FrontController@getNews');
+Route::get('/news/more/{id}', 'FrontController@getMore');
+Route::get('/news/{agr}/more/{id}', 'FrontController@getMore');
+Route::get('/news/{agr}', 'FrontController@getNewsAgr');

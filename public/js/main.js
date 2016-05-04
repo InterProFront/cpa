@@ -70,4 +70,34 @@ $(document).ready(function(){
         var offser = $($(this).attr('href')).offset().top;
         $("html, body").animate({ scrollTop: offser }, 600);
     });
+
+    //im so sorry, fix it
+    $('.popup-menu .item').on('click',function(){
+        document.location.href = $(this).children('.menu-item').attr('href');
+    });
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    //give a more news
+    $('.more-news').on('click',function(){
+        var id  =  $('.small-news .news').last().data('id');
+        var deffered = $.ajax({
+            type: 'GET',
+            url: window.location.pathname+'/more/'+id
+        });
+        deffered.done(function(data){
+
+        });
+        deffered.success(function(data){
+            $('.small-news').appendTo(data.complhtml);
+        });
+        deffered.fail(function(){
+
+        });
+    });
+
+
 });

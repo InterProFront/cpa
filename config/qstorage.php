@@ -56,6 +56,7 @@ return [
 //    dom elements
     'dom_news' => [
         'title' => 'news',
+        'images' => ['head'],
         'groups' => [
             'news'=> [
                 'stringfields' => ['link','news_title','news_date','agregator'],
