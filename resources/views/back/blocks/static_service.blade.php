@@ -1,5 +1,6 @@
 @extends('back.layout')
 @section('content')
+    <?php $title = 'Услуги'?>
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">

@@ -1,8 +1,7 @@
 @extends('back.layout')
 @section('content')
+    <?php $title = 'Техника безопасности'?>
     <div class="block ">
-
-
         <div class="field-wrap ">
             <label class="input-file">
             </label>
@@ -42,7 +41,6 @@
                 </div>
             </div>
         </div>
-
 
 
         <div class="field-wrap ">
