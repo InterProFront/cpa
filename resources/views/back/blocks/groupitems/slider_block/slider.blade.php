@@ -1,7 +1,15 @@
 <li class="group" data-group-id="{{$item_slider->id_field}}">
+    <div class="title-block">
+        <lable class="group-title">Слайд</lable>
+        <button type="button" class="any_delete" data-block="slider_block" data-group="slider"
+                data-entity="groupitem" data-item-id="{{$item_slider->id_field}}" data-descr="Эл. первой группы">
+            Удалить
+        </button>
+    </div>
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -48,6 +56,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Название слайда
             </label>
             <input type="text" data-field-type="string" data-field-name="slide_name" data-block="slider_block"
                    data-group="slider" class="input group_field" value="{{$item_slider->slide_name_field}}"
@@ -55,6 +64,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Текст
             </label>
             <input type="text" data-field-type="string" data-field-name="slide_text" data-block="slider_block"
                    data-group="slider" class="input group_field" value="{{$item_slider->slide_text_field}}"
@@ -63,10 +73,6 @@
         <div class="field-wrap buttons_block">
             <button type="button" class="any_save" data-block="slider_block" data-group="slider" data-entity="groupitem"
                     data-item-id="{{$item_slider->id_field}}" data-descr="Эл. первой группы"> Сохранить
-            </button>
-            <button type="button" class="any_delete" data-block="slider_block" data-group="slider"
-                    data-entity="groupitem" data-item-id="{{$item_slider->id_field}}" data-descr="Эл. первой группы">
-                Удалить
             </button>
         </div>
     </div>

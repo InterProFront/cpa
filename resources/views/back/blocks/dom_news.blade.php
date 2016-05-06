@@ -3,12 +3,14 @@
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Заголовок
             </label>
             <input type="text" data-field-type="string" data-field-name="title" data-block="dom_news"
                    class="input block_pre_field" value="{{$dom_news->title_field}}" placeholder="Заголовок">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Титульное изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">

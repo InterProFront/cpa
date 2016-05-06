@@ -1,5 +1,8 @@
     <div class="block ">
         <div class="field-wrap ">
+            <label class="input-file">
+                Список курсов обучения
+            </label>
             <table>
                 <thead>
                 <tr>

@@ -4,36 +4,35 @@
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Заголовок
             </label>
             <input type="text" data-field-type="string" data-field-name="title" data-block="static_company"
                    class="input block_pre_field" value="{{$static_company->title_field}}" placeholder="Заголовок">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                О компании
             </label>
             <textarea data-field-type="text" data-field-name="about_company" data-block="static_company"
                       class="input block_field" placeholder="Текст">{{$static_company->about_company_field}}</textarea>
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Текст справа
             </label>
             <textarea data-field-type="text" data-field-name="say_text" data-block="static_company"
                       class="input block_field" placeholder="Текст">{{$static_company->say_text_field}}</textarea>
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Имя человека справа
             </label>
             <input type="text" data-field-type="string" data-field-name="people_name" data-block="static_company"
                    class="input block_field" value="{{$static_company->people_name_field}}" placeholder="Строка">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
-            </label>
-            <input type="text" data-field-type="string" data-field-name="iqsa" data-block="static_company"
-                   class="input block_field" value="{{$static_company->iqsa_field}}" placeholder="Строка">
-        </div>
-        <div class="field-wrap ">
-            <label class="input-file">
+                Фото человека
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -76,6 +75,14 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Название компании
+            </label>
+            <input type="text" data-field-type="string" data-field-name="iqsa" data-block="static_company"
+                   class="input block_field" value="{{$static_company->iqsa_field}}" placeholder="Строка">
+        </div>
+        <div class="field-wrap ">
+            <label class="input-file">
+                Логотип компании
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">

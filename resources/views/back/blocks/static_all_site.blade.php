@@ -4,6 +4,7 @@
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Логотип
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -43,24 +44,28 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Телефон
             </label>
             <input type="text" data-field-type="string" data-field-name="phone" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->phone_field}}" placeholder="Строка">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Мобильный телефон
             </label>
             <input type="text" data-field-type="string" data-field-name="mob_phone" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->mob_phone_field}}" placeholder="Строка">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Ссылка на карту
             </label>
             <input type="text" data-field-type="string" data-field-name="map_link" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->map_link_field}}" placeholder="Строка">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Copyright
             </label>
             <input type="text" data-field-type="string" data-field-name="copy" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->copy_field}}" placeholder="Строка">

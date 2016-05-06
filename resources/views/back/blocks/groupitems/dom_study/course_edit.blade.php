@@ -5,6 +5,7 @@
         <div class="block ">
             <div class="field-wrap ">
                 <label class="input-file">
+                    Название курса
                 </label>
                 <input type="text" data-field-type="string" data-field-name="course_title" data-block="dom_study"
                        data-group="course" class="input group_field" value="{{$item_course->course_title_field}}"
@@ -12,6 +13,7 @@
             </div>
             <div class="field-wrap ">
                 <label class="input-file">
+                    Стоимость курса
                 </label>
                 <input type="text" data-field-type="string" data-field-name="cost_course" data-block="dom_study"
                        data-group="course" class="input group_field" value="{{$item_course->cost_course_field}}"
@@ -19,17 +21,11 @@
             </div>
             <div class="field-wrap ">
                 <label class="input-file">
+                    Описание курса
                 </label>
-                <input type="text" data-field-type="string" data-field-name="name" data-block="dom_study"
-                       data-group="course" class="input group_field" value="{{$item_course->name_field}}"
-                       data-item-id="{{$item_course->id_field}}" placeholder="Строка">
-            </div>
-            <div class="field-wrap ">
-                <label class="input-file">
-                </label>
-                <input type="text" data-field-type="string" data-field-name="slug" data-block="dom_study"
-                       data-group="course" class="input group_pre_field" value="{{$item_course->slug_field}}"
-                       data-item-id="{{$item_course->id_field}}" placeholder="Строка">
+            <textarea data-field-type="text" data-field-name="about_course" data-block="dom_study" data-group="course"
+                      class="input group_field" data-item-id="{{$item_course->id_field}}"
+                      placeholder="Текст">{{$item_course->about_course_field}}</textarea>
             </div>
             <ul class="group-block group_container" data-block="dom_study" data-group="docs"
                 data-owner-id="{{$item_course->id_field}}">
@@ -49,13 +45,6 @@
             <button class="any_create" data-block="dom_study" data-group="course_image" data-descr="Эл. первой группы"
                     data-owner-id="{{$item_course->id_field}}"> Добавить
             </button>
-            <div class="field-wrap ">
-                <label class="input-file">
-                </label>
-            <textarea data-field-type="text" data-field-name="about_course" data-block="dom_study" data-group="course"
-                      class="input group_field" data-item-id="{{$item_course->id_field}}"
-                      placeholder="Текст">{{$item_course->about_course_field}}</textarea>
-            </div>
             <div class="field-wrap buttons">
                 <button type="button" class="any_save" data-block="dom_study" data-group="course"
                         data-entity="groupitem"

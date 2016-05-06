@@ -1,7 +1,14 @@
 <li class="group" data-group-id="{{$item_fact->id_field}}">
+    <div class="title-block">
+        <lable class="group-title">Факт</lable>
+        <button type="button" class="any_delete" data-block="static_facts" data-group="fact" data-entity="groupitem"
+                data-item-id="{{$item_fact->id_field}}" data-descr="Эл. первой группы"> Удалить
+        </button>
+    </div>
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -48,6 +55,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Текст
             </label>
             <input type="text" data-field-type="string" data-field-name="fact_title" data-block="static_facts"
                    data-group="fact" class="input group_field" value="{{$item_fact->fact_title_field}}"
@@ -56,9 +64,6 @@
         <div class="field-wrap buttons_block">
             <button type="button" class="any_save" data-block="static_facts" data-group="fact" data-entity="groupitem"
                     data-item-id="{{$item_fact->id_field}}" data-descr="Эл. первой группы"> Сохранить
-            </button>
-            <button type="button" class="any_delete" data-block="static_facts" data-group="fact" data-entity="groupitem"
-                    data-item-id="{{$item_fact->id_field}}" data-descr="Эл. первой группы"> Удалить
             </button>
         </div>
     </div>
