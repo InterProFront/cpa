@@ -5,6 +5,21 @@
         <div class="head-image">
             <img src="/images/{{$rules->head_image->primary_link}}" alt="">
         </div>
+
+        <?php
+        function Fr($str){
+
+            $date = new DateTime($str);
+
+            $str = (string)$date->format('d M Y');
+
+            $str = str_replace(array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'),
+                    array('Января', 'Фервраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'),
+                    $str);
+
+            return $str;
+        }
+        ?>
         @include('front.tb.menu')
         @yield('menu')
         <div class="company company-big">
@@ -23,7 +38,7 @@
                             @foreach($news as $item)
                                 <div class="news">
                                     <p class="news-title"><a href="{{$item->link_field}}">{{$item->news_title_field}}</a></p>
-                                    <p class="small">{{$item->news_date_field}}  •  <a href="https://tengrinews.kz">tengrinews.kz</a></p></div>
+                                    <p class="small"><?=Fr($item->news_date_field) ?>  •  <a href="https://tengrinews.kz">tengrinews.kz</a></p></div>
                            @endforeach
                         </div>
                     </div>
