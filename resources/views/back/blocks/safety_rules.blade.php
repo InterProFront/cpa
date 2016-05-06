@@ -9,15 +9,15 @@
                 <div class="drag-n-drop">
                     <div class="drag"><input type="text" value="Отпустите клавишу мыши, чтобы загрузить файл"></div>
                     <div class="img-hide-block">
-                        <input type="hidden" class="prefix" data-field-name="logo" data-field-type="image"
+                        <input type="hidden" class="prefix" data-field-name="head" data-field-type="image"
                                data-block="safety_rules" value="{{$safety_rules->head_image->prefix}}">
-                        <input type="hidden" class="preview_link" data-field-name="logo" data-field-type="image"
+                        <input type="hidden" class="preview_link" data-field-name="head" data-field-type="image"
                                data-block="safety_rules" value="{{$safety_rules->head_image->preview_link}}">
-                        <input type="hidden" class="primary_link" data-field-name="logo" data-field-type="image"
+                        <input type="hidden" class="primary_link" data-field-name="head" data-field-type="image"
                                data-block="safety_rules" value="{{$safety_rules->head_image->primary_link}}">
-                        <input type="hidden" class="secondary_link" data-field-name="logo" data-field-type="image"
+                        <input type="hidden" class="secondary_link" data-field-name="head" data-field-type="image"
                                data-block="safety_rules" value="{{$safety_rules->head_image->secondary_link}}">
-                        <input type="hidden" class="icon_link" data-field-name="logo" data-field-type="image"
+                        <input type="hidden" class="icon_link" data-field-name="head" data-field-type="image"
                                data-block="safety_rules" value="{{$safety_rules->head_image->icon_link}}">
                     </div>
                     <div class="preview-block">
