@@ -4,7 +4,7 @@
         <div class="col">
             <h2 class="medium-title">{{$item->service_name_field}}</h2>
             {!! $item->about_service_field !!}
-            <p><a href="#">Оформить заявку</a></p>
+            <p><a class="buy_service" href="#buy_service">Оформить заявку</a></p>
         </div>
         <div class="col">
             <div class="photo-block" id="first">

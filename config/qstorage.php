@@ -99,7 +99,29 @@ return [
                 'images' => ['course_pict']
             ]
         ]
+    ],
+
+
+    //=================
+
+    'fidback' => [
+        'stringfields' => ['mail_rec','mail_username','site_name'],
+        'groups' => [
+            'join' =>[
+                'stringfields' => ['fio','email','phone','program'],
+                'bools'        => ['mailed']
+            ],
+            'ask' =>[
+                'stringfields' => ['fio','email','question'],
+                'bools'        => ['mailed']
+            ],
+            'buy_service' => [
+                'stringfields' => ['fio','email','phone','service'],
+                'bools'        => ['mailed']
+            ]
+        ]
     ]
+
 
 
 ];

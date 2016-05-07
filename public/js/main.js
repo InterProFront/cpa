@@ -65,6 +65,12 @@ $(document).ready(function(){
         type:'inline',
         midClick: true
     });
+    $('.buy_service').magnificPopup({
+        type:'inline',
+        midClick: true
+    });
+
+
 
     $('.anchor .link').on('click',function(){
         var offser = $($(this).attr('href')).offset().top;

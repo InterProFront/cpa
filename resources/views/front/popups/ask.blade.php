@@ -3,11 +3,11 @@
         <h3 class="popup_title">Задать вопрос</h3>
         <div class="row">
             <p class="row-name">Имя</p>
-            <input class="input popup_field" type="text" data-field-type="string" data-field-name="name">
+            <input class="input popup_field" type="text" data-field-type="string" data-field-name="fio">
         </div>
         <div class="row">
             <p class="row-name">Почта</p>
-            <input class="input popup_field" type="text" data-field-type="string" data-field-name="mail">
+            <input class="input popup_field" type="text" data-field-type="string" data-field-name="email">
         </div>
         <div class="row">
             <p class="row-name">Вопрос</p>
@@ -15,7 +15,7 @@
                       data-field-name="question"></textarea>
         </div>
         <div class="row">
-            <button class="button">Отправить</button>
+            <button class="button send-mail" data-popup-id="ask" data-type-name="ask">Отправить</button>
         </div>
     </div>
 @endsection

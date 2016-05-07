@@ -415,11 +415,11 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
 }
 .big-block .link-block .link-p a:hover {
   color: #ff6666;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#ffcdcd), to(#ffcdcd));
-  background: -webkit-linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#ffcdcd), color-stop(90%, #ffcdcd));
-  background: -webkit-linear-gradient(right, #ffcdcd, #ffcdcd 90%);
-  background: linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#baadcb), to(#baadcb));
+  background: -webkit-linear-gradient(to left, #baadcb, #baadcb 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#baadcb), color-stop(90%, #baadcb));
+  background: -webkit-linear-gradient(right, #baadcb, #baadcb 90%);
+  background: linear-gradient(to left, #baadcb, #baadcb 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c4', endColorstr='@c4', GradientType=0);
   background-position: 0 97%;
   background-size: 10px 1px;
@@ -595,6 +595,8 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   font-weight: normal;
   font-size: 32px;
   padding-top: 35px;
+  max-height: 1000px;
+  margin: 0 auto;
 }
 .clients-block ul.clients-block {
   padding: 5px 120px;
@@ -612,6 +614,9 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .clients-block ul.clients-block li.client {
   padding: 10px;
@@ -792,9 +797,10 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   font-size: 12px;
   padding-left: 0;
   margin-bottom: 0;
+  color: #999999;
 }
 .company.company-big .study-block.news .wrap .col:last-child.new .news p.small a {
-  color: #666666;
+  color: #999999;
   font-weight: normal;
 }
 .company.company-big .study-block.news .wrap .col:last-child.new .news p.small a:hover {
@@ -1321,4 +1327,15 @@ footer.footer .foot .col-1-2:last-child p a:hover {
 }
 .white-popup .row:last-of-type {
   text-align: right;
+}
+
+h3.popup_title.center {
+  text-align: center;
+}
+
+#thanks p {
+  text-align: center;
+}
+.white-popup .row .input.error {
+  border: 1px solid red;
 }

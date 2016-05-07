@@ -91,14 +91,14 @@
                 @endforeach
             </ul>
         </div>
-        <div class="clients-block">
-            <h2 class="medium-title">Среди клиентов</h2>
-            <ul class="clients-block">
-                @foreach($clients->client_group as $item)
-                    <li class="client"><a href="{{$item->client_link_field}}"><img
-                                    src="/images/{{$item->client_pict_image->primary_link}}" alt=""></a></li>
-                @endforeach
-            </ul>
-        </div>
     </section>
+    <div class="clients-block">
+        <h2 class="medium-title">Среди клиентов</h2>
+        <ul class="clients-block">
+            @foreach($clients->client_group as $item)
+                <li class="client"><a href="{{$item->client_link_field}}"><img
+                                src="/images/{{$item->client_pict_image->primary_link}}" alt=""></a></li>
+            @endforeach
+        </ul>
+    </div>
 @endsection

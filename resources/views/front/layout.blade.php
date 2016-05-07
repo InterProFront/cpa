@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{{$title or 'Центр Промышленного Альпинизма'}}}</title>
         @include('front.style')
         @yield('style')
@@ -10,11 +11,6 @@
 
     <body>
         <div class="wrapper">
-            <div class="sky">
-                <img src="/images/sky1.PNG" alt="" id="sky_1"><img src="/images/sky1.PNG" alt="" id="sky_2"><img
-                        src="/images/sky1.PNG" alt="" id="sky_3"><img src="/images/sky1.PNG" alt="" id="sky_4"><img
-                        src="/images/sky1.PNG" alt="" id="sky_5">
-            </div>
             @include('front.header')
             @yield('header')
             @yield('content')
@@ -22,7 +18,14 @@
             @yield('footer')
         </div>
         <div class="popup-hider">
+            @include('front.popups.ask')
+            @include('front.popups.join')
+            @include('front.popups.serv')
+            @include('front.popups.thank')
             @yield('ask')
+            @yield('join')
+            @yield('serv')
+            @yield('thank')
         </div>
         @include('front.scripts')
         @yield('scripts')

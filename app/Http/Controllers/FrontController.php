@@ -13,8 +13,12 @@ class FrontController extends Controller {
 		$this->queryAgent = $queryAgent;
 
 		$all_site = $this->queryAgent->getBlock('static_all_site',[],[]);
+		$st = $this->queryAgent->getGroupFlat('dom_study','course',[],[]);
+		$sv = $this->queryAgent->getGroupFlat('dom_service','service',[],[]);
 
 		view()->share('all_site',$all_site);
+		view()->share('st',$st);
+		view()->share('sv',$sv);
 	}
 
 	public function getIndex(){
