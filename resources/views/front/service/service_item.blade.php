@@ -7,7 +7,7 @@
             <p><a class="buy_service" href="#buy_service">Оформить заявку</a></p>
         </div>
         <div class="col">
-            <div class="photo-block" id="first">
+            <div class="photo-block" id="gall_{{$i}}">
                 @include('front.service.photo')
 
                 <div class="hide-block">

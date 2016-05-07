@@ -12,8 +12,9 @@
             <div class="full-size-descr service">
                 {!! $s_study->about_services_field !!}
             </div>
-            <?php $i = 0?>
+            <?php $i = 1?>
             @foreach($service->service_group as $item)
+                <?php $i++ ?>
                 @include('front.service.service_item')
             @endforeach
         </div>

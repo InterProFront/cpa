@@ -23,25 +23,6 @@ $(document).ready(function(){
     });
 
     //Инициализация галлереи
-    $('#second a').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1], // Will preload 0 - before current, and 1 after the current image
-            tCounter: '%curr% из %total%'
-        }
-    });
-
-    $('#first a').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true,
-            navigateByImgClick: true,
-            preload: [0,1], // Will preload 0 - before current, and 1 after the current image
-            tCounter: '%curr% из %total%'
-        }
-    });
 
     for(var i = 1; i<= 6; i++){
         $('#gall_'+i+' a').magnificPopup({

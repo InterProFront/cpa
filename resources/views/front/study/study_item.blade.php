@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="col">
-            <div class="photo-block" id="first">
+            <div class="photo-block" id="gall_{{$i}}">
                 @include('front.study.photo')
 
                 <div class="hide-block">

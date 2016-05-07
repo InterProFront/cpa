@@ -12,7 +12,7 @@
             <div class="full-size-descr">
                 {!! $s_study->about_study_field !!}
             </div>
-            <?php $i = 0?>
+            <?php $i = 1?>
             @foreach($study->course_group as $item)
                 @include('front.study.study_item')
             @endforeach
