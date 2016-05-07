@@ -1,4 +1,10 @@
 <li class="group" data-group-id="{{$item_news->id_field}}">
+    <div class="title-block">
+        <lable class="group-title">Фотография курса</lable>
+        <<button type="button" class="any_delete" data-block="dom_news" data-group="news" data-entity="groupitem"
+                 data-item-id="{{$item_news->id_field}}" data-descr="Эл. первой группы"> Удалить
+        </button>
+    </div>
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
@@ -38,9 +44,6 @@
         <div class="field-wrap buttons_block">
             <button type="button" class="any_save" data-block="dom_news" data-group="news" data-entity="groupitem"
                     data-item-id="{{$item_news->id_field}}" data-descr="Эл. первой группы"> Сохранить
-            </button>
-            <button type="button" class="any_delete" data-block="dom_news" data-group="news" data-entity="groupitem"
-                    data-item-id="{{$item_news->id_field}}" data-descr="Эл. первой группы"> Удалить
             </button>
         </div>
     </div>
