@@ -4,12 +4,14 @@
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Заголовок
             </label>
             <input type="text" data-field-type="string" data-field-name="title" data-block="static_study"
                    class="input block_pre_field" value="{{$static_study->title_field}}" placeholder="Заголовок">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Титульное изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -49,6 +51,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                О курсах
             </label>
             <textarea data-field-type="text" data-field-name="about_study" data-block="static_study"
                       class="input block_field" placeholder="Текст">{{$static_study->about_study_field}}</textarea>

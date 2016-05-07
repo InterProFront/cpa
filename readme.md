@@ -23,7 +23,9 @@
 
     composer require interpro/admingenerator 1.0.x-dev
 
-    composer require interpro/placeholder 1.0.x-dev
+    composer require interpro/placeholder 1.0.x-dev    
+    
+    composer require interpro/quickstorage 1.0.x-dev & composer require interpro/imagefilelogic 1.0.x-dev & composer require interpro/fidback 1.0.x-dev & composer require interpro/admingenerator 1.0.x-dev & composer require interpro/placeholder 1.0.x-dev
 
 ---
 4\. Создание базы данных

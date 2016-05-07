@@ -1,7 +1,15 @@
 <li class="group" data-group-id="{{$item_client->id_field}}">
+    <div class="title-block">
+        <lable class="group-title">Клиент</lable>
+        <button type="button" class="any_delete" data-block="static_clients" data-group="client"
+                data-entity="groupitem" data-item-id="{{$item_client->id_field}}" data-descr="Эл. первой группы">
+            Удалить
+        </button>
+    </div>
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -50,6 +58,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Ссылка на сайт клиента
             </label>
             <input type="text" data-field-type="string" data-field-name="client_link" data-block="static_clients"
                    data-group="client" class="input group_field" value="{{$item_client->client_link_field}}"
@@ -59,10 +68,6 @@
             <button type="button" class="any_save" data-block="static_clients" data-group="client"
                     data-entity="groupitem" data-item-id="{{$item_client->id_field}}" data-descr="Эл. первой группы">
                 Сохранить
-            </button>
-            <button type="button" class="any_delete" data-block="static_clients" data-group="client"
-                    data-entity="groupitem" data-item-id="{{$item_client->id_field}}" data-descr="Эл. первой группы">
-                Удалить
             </button>
         </div>
     </div>

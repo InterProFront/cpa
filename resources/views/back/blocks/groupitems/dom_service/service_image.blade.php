@@ -1,7 +1,15 @@
 <li class="group" data-group-id="{{$item_service_image->id_field}}">
+    <div class="title-block">
+        <lable class="group-title">Услуга</lable>
+        <button type="button" class="any_delete" data-block="dom_service" data-group="service_image"
+                data-entity="groupitem" data-item-id="{{$item_service_image->id_field}}"
+                data-descr="Эл. первой группы"> Удалить
+        </button>
+    </div>
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -53,10 +61,6 @@
             <button type="button" class="any_save" data-block="dom_service" data-group="service_image"
                     data-entity="groupitem" data-item-id="{{$item_service_image->id_field}}"
                     data-descr="Эл. первой группы"> Сохранить
-            </button>
-            <button type="button" class="any_delete" data-block="dom_service" data-group="service_image"
-                    data-entity="groupitem" data-item-id="{{$item_service_image->id_field}}"
-                    data-descr="Эл. первой группы"> Удалить
             </button>
         </div>
     </div>

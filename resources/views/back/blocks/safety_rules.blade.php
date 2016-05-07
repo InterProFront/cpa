@@ -4,6 +4,7 @@
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
+                Титульное изображение
             </label>
             <div class="image-load">
                 <div class="drag-n-drop">
@@ -45,12 +46,14 @@
 
         <div class="field-wrap ">
             <label class="input-file">
+                Заголовок
             </label>
             <input type="text" data-field-type="string" data-field-name="title" data-block="safety_rules"
                    class="input block_pre_field" value="{{$safety_rules->title_field}}" placeholder="Заголовок">
         </div>
         <div class="field-wrap ">
             <label class="input-file">
+                Описание
             </label>
             <textarea data-field-type="text" data-field-name="rules_text" data-block="safety_rules"
                       class="input block_field" placeholder="Текст">{{$safety_rules->rules_text_field}}</textarea>
