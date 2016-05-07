@@ -210,7 +210,7 @@ button.button.disabled {
   top: 36%;
   left: 100px;
   padding: 27px 50px 50px 27px;
-  background: #0b4171;
+  background: rgba(11, 65, 113, 0.85);
 }
 .slider-wrapper .bx-wrapper .slider-content li.slide .text-wrap .slide-name {
   color: #ffffff;
