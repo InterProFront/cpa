@@ -23,7 +23,7 @@
                         <p><a href="mailto:info@cpa.kz">info@cpa.kz</a></p>
                     </li>
                 </ul>
-                <p>Сделано в <a href="http://interpro.kz">ИнтерПро</a></p>
+                <p>Сделано в <a target="_blank" href="http://interpro.kz">ИнтерПро</a></p>
             </div>
         </div>
     </footer>

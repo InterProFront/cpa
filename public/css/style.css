@@ -548,11 +548,11 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
 }
 .big-block .service-row .col-1-2:last-child .law p.text a:hover {
   color: #ff6666;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#ffcdcd), to(#ffcdcd));
-  background: -webkit-linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#ffcdcd), color-stop(90%, #ffcdcd));
-  background: -webkit-linear-gradient(right, #ffcdcd, #ffcdcd 90%);
-  background: linear-gradient(to left, #ffcdcd, #ffcdcd 90%);
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#baadcb), to(#baadcb));
+  background: -webkit-linear-gradient(to left, #baadcb, #baadcb 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#baadcb), color-stop(90%, #baadcb));
+  background: -webkit-linear-gradient(right, #baadcb, #baadcb 90%);
+  background: linear-gradient(to left, #baadcb, #baadcb 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@c4', endColorstr='@c4', GradientType=0);
   background-position: 0 97%;
   background-size: 10px 1px;
