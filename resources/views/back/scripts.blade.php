@@ -11,9 +11,9 @@
     <script src="/Admin/js/groupitemcreate.js"></script>
     <script src="/Admin/js/anysave.js"></script>
 
-    <script src="/Admin/vendor/trumbowyg/dist/trumbowyg.js"></script>
+    <script src="/Admin/js/trumbowyg.js"></script>
     <script src="/Admin/js/trumbowyg.upload.js"></script>
-    <script src="/Admin/js/trumbowyg.fonts.js"></script>
+    <script src="/Admin/js/trumbowyg.colors.js"></script>
     <script src="/Admin/js/services.js"></script>
 
 
@@ -23,4 +23,6 @@
 
 
     <link rel="stylesheet" href="/Admin/css/app.css">
+    <link rel="stylesheet" href="/Admin/css/trumbowyg.min.css">
+    <link rel="stylesheet" href="/Admin/css/trumbowyg.colors.css">
 @endsection
