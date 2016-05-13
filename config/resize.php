@@ -96,19 +96,19 @@ return [
     'service_image_serv_pict' => [
         'sizes' => [
             ['width' => 800, 'height' => null, 'sufix' => 'primary'],
-            ['width' => 230, 'height' => 230, 'sufix' => 'secondary', 'absolve'],
+            ['width' => 230, 'height' => 230, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
-            ['width' => 110, 'height' => 110, 'sufix' => 'icon', 'absolve'],
+            ['width' => 110, 'height' => 110, 'sufix' => 'icon'],
         ]
     ],
     'course_image_course_pict' => [
         'sizes' => [
             ['width' => 800, 'height' => null, 'sufix' => 'primary'],
-            ['width' => 230, 'height' => 230, 'sufix' => 'secondary','absolve'],
+            ['width' => 230, 'height' => 230, 'sufix' => 'secondary'],
             ['width' => 160, 'height' => 90, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
-            ['width' => 110, 'height' => 110, 'sufix' => 'icon', 'absolve'],
+            ['width' => 110, 'height' => 110, 'sufix' => 'icon'],
         ]
     ],
     'images_set_text_pict' => [
