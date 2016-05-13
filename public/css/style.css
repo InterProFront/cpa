@@ -15,11 +15,11 @@
   background: #497cd5;
   /* Old browsers */
   /* FF3.6-15 */
-  background: url('../images/sky1.PNG') 110px 460px no-repeat,url('../images/sky1.PNG') 1260px 775px no-repeat,url('../images/sky1.PNG') 110px 1460px no-repeat,url('../images/sky1.PNG') 1100px 1720px no-repeat,-webkit-linear-gradient(to bottom, #497cd5 0%, #497cd5 6%, #4c7fd6 6%, #5e90de 9%, #8cbcf0 14%, #9ccbf7 16%, #9bcaf7 63%, #a6d0f8 71%, #c8e2fb 90%, #cde5fb 95%, #cde5fb 100%);
+  background: url('1.png') 570px 990px no-repeat,url('2.png') 670px 1700px no-repeat,url('3.png') 0px 620px no-repeat,url('4.png') 30px 1820px no-repeat,-webkit-linear-gradient(to bottom, #497cd5 0%, #497cd5 6%, #4c7fd6 6%, #5e90de 9%, #8cbcf0 14%, #9ccbf7 16%, #9bcaf7 63%, #a6d0f8 71%, #c8e2fb 90%, #cde5fb 95%, #cde5fb 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: url('../images/sky1.PNG') 110px 460px no-repeat,url('../images/sky1.PNG') 1260px 775px no-repeat,url('../images/sky1.PNG') 110px 1460px no-repeat,url('../images/sky1.PNG') 1100px 1720px no-repeat,-webkit-gradient(linear, left top, left bottom, from(#497cd5), color-stop(6%, #497cd5), color-stop(6%, #4c7fd6), color-stop(9%, #5e90de), color-stop(14%, #8cbcf0), color-stop(16%, #9ccbf7), color-stop(63%, #9bcaf7), color-stop(71%, #a6d0f8), color-stop(90%, #c8e2fb), color-stop(95%, #cde5fb), to(#cde5fb));
-  background:url('../images/sky1.PNG') 110px 460px no-repeat,url('../images/sky1.PNG') 1260px 775px no-repeat,url('../images/sky1.PNG') 110px 1460px no-repeat,url('../images/sky1.PNG') 1100px 1720px no-repeat, -webkit-linear-gradient(top, #497cd5 0%, #497cd5 6%, #4c7fd6 6%, #5e90de 9%, #8cbcf0 14%, #9ccbf7 16%, #9bcaf7 63%, #a6d0f8 71%, #c8e2fb 90%, #cde5fb 95%, #cde5fb 100%);
-  background: url('../images/sky1.PNG') 110px 460px no-repeat,url('../images/sky1.PNG') 1260px 775px no-repeat,url('../images/sky1.PNG') 110px 1460px no-repeat,url('../images/sky1.PNG') 1100px 1720px no-repeat,linear-gradient(to bottom, #497CD8 0%, #497cd5 6%, #4c7fd6 6%, #5e90de 9%, #8cbcf0 14%, #9ccbf7 16%, #9bcaf7 63%, #a6d0f8 71%, #c8e2fb 90%, #cde5fb 95%, #cde5fb 100%);
+  background: url('1.png') 570px 990px no-repeat,url('2.png') 670px 1700px no-repeat,url('3.png') 0px 620px no-repeat,url('4.png') 30px 1820px no-repeat,-webkit-gradient(linear, left top, left bottom, from(#497cd5), color-stop(6%, #497cd5), color-stop(6%, #4c7fd6), color-stop(9%, #5e90de), color-stop(14%, #8cbcf0), color-stop(16%, #9ccbf7), color-stop(63%, #9bcaf7), color-stop(71%, #a6d0f8), color-stop(90%, #c8e2fb), color-stop(95%, #cde5fb), to(#cde5fb));
+  background: url('1.png') 570px 990px no-repeat,url('2.png') 670px 1700px no-repeat,url('3.png') 0px 620px no-repeat,url('4.png') 30px 1820px no-repeat,-webkit-linear-gradient(top, #497cd5 0%, #497cd5 6%, #4c7fd6 6%, #5e90de 9%, #8cbcf0 14%, #9ccbf7 16%, #9bcaf7 63%, #a6d0f8 71%, #c8e2fb 90%, #cde5fb 95%, #cde5fb 100%);
+  background: url('1.png') 570px 990px no-repeat,url('2.png') 670px 1700px no-repeat,url('3.png') 0px 620px no-repeat,url('4.png') 30px 1820px no-repeat,linear-gradient(to bottom, #497CD8 0%, #497cd5 6%, #4c7fd6 6%, #5e90de 9%, #8cbcf0 14%, #9ccbf7 16%, #9bcaf7 63%, #a6d0f8 71%, #c8e2fb 90%, #cde5fb 95%, #cde5fb 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#497cd5', endColorstr='#cde5fb', GradientType=0);
   position: relative;
@@ -1108,7 +1108,7 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
 }
 footer.footer {
   background: #13191f;
-  height: 220px;
+  height: 100%;
 }
 footer.footer .footer-img {
   height: 5px;
@@ -1116,13 +1116,19 @@ footer.footer .footer-img {
   margin: 0 auto;
 }
 footer.footer .footer-img .footer-image-wrap {
-  width: 1000px;
+  width: 1280px;
   position: absolute;
   height: 0;
+  max-width: 100%;
 }
 footer.footer .footer-img .footer-image-wrap img {
   position: relative;
   top: -184px;
+  max-width: 100%;
+  min-width: 900px;
+  object-fit: cover;
+  height: 185px;
+  object-position: 100% 0;
 }
 footer.footer .foot {
   display: -webkit-box;
