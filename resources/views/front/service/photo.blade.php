@@ -4,7 +4,7 @@
     <?php $c++ ?>
         @if($c == 1)
             <div class="col-2-3">
-                <a href="/images/{{$img->serv_pict_image->primary_link}}"><img src="/images/{{$img->serv_pict_image->secondary_link}}" alt=""></a>
+                <a href="/images/{{$img->serv_pict_image->primary_link}}"><img src="/images/{{$img->serv_pict_image->big_crop}}" alt=""></a>
             </div>
         @elseif($c == 2)
             <div class="col-1-3">

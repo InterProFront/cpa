@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{{$title or 'Центр Промышленного Альпинизма'}}}</title>
+        <link rel="icon" type="image/gif" href="/images/FAV-icon.gif" />
         @include('front.style')
         @yield('style')
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
