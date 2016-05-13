@@ -461,12 +461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/quickstart.git",
-                "reference": "4f7077041f2f62798d04c278f420b448622ed9e6"
+                "reference": "7984d93fdda5e197c49658aad25d706499b94db5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/quickstart/zipball/4f7077041f2f62798d04c278f420b448622ed9e6",
-                "reference": "4f7077041f2f62798d04c278f420b448622ed9e6",
+                "url": "https://api.github.com/repos/intpro/quickstart/zipball/7984d93fdda5e197c49658aad25d706499b94db5",
+                "reference": "7984d93fdda5e197c49658aad25d706499b94db5",
                 "shasum": ""
             },
             "type": "library",
@@ -496,7 +496,7 @@
             "keywords": [
                 "qstorage"
             ],
-            "time": "2016-05-13 11:21:17"
+            "time": "2016-05-13 11:59:08"
         },
         {
             "name": "interpro/rss",
