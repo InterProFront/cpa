@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e4f00941ef7a3a8ac9ebecbc6e1c08d4",
+    "hash": "0b28121dc98e5c08105b6157e0832c48",
     "content-hash": "0e2cd96015fc40a34226d6345432beeb",
     "packages": [
         {
@@ -287,12 +287,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/admin_generator.git",
-                "reference": "5c77fdc1539c6991803ef5f2a1ca6813346dd63e"
+                "reference": "44207d16b4484dc5ae56159856e887dca00e6d17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/admin_generator/zipball/5c77fdc1539c6991803ef5f2a1ca6813346dd63e",
-                "reference": "5c77fdc1539c6991803ef5f2a1ca6813346dd63e",
+                "url": "https://api.github.com/repos/intpro/admin_generator/zipball/44207d16b4484dc5ae56159856e887dca00e6d17",
+                "reference": "44207d16b4484dc5ae56159856e887dca00e6d17",
                 "shasum": ""
             },
             "type": "library",
@@ -316,7 +316,7 @@
                 }
             ],
             "description": "admin generator class",
-            "time": "2016-05-03 18:10:21"
+            "time": "2016-05-13 07:01:15"
         },
         {
             "name": "interpro/fidback",
@@ -324,12 +324,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/fidback.git",
-                "reference": "0494111c97f91294bdfb8eb06a34fd16782706f8"
+                "reference": "5130ef1df5b8872a5e5bd297fbdd0171bac46370"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/fidback/zipball/0494111c97f91294bdfb8eb06a34fd16782706f8",
-                "reference": "0494111c97f91294bdfb8eb06a34fd16782706f8",
+                "url": "https://api.github.com/repos/intpro/fidback/zipball/5130ef1df5b8872a5e5bd297fbdd0171bac46370",
+                "reference": "5130ef1df5b8872a5e5bd297fbdd0171bac46370",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +363,7 @@
                 "fidback",
                 "popap"
             ],
-            "time": "2016-04-09 14:11:02"
+            "time": "2016-05-04 13:41:29"
         },
         {
             "name": "interpro/imagefilelogic",
@@ -461,12 +461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/quickstart.git",
-                "reference": "c09b6b034fe64d713eb82951c4dceaf21aaac6a1"
+                "reference": "4f7077041f2f62798d04c278f420b448622ed9e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/quickstart/zipball/c09b6b034fe64d713eb82951c4dceaf21aaac6a1",
-                "reference": "c09b6b034fe64d713eb82951c4dceaf21aaac6a1",
+                "url": "https://api.github.com/repos/intpro/quickstart/zipball/4f7077041f2f62798d04c278f420b448622ed9e6",
+                "reference": "4f7077041f2f62798d04c278f420b448622ed9e6",
                 "shasum": ""
             },
             "type": "library",
@@ -496,7 +496,7 @@
             "keywords": [
                 "qstorage"
             ],
-            "time": "2016-05-03 14:01:19"
+            "time": "2016-05-13 11:21:17"
         },
         {
             "name": "interpro/rss",

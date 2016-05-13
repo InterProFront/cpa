@@ -31,6 +31,9 @@
                         <input type="hidden" class="icon_link" data-field-name="serv_pict" data-group="service_image"
                                data-field-type="image" data-item-id="{{$item_service_image->id_field}}"
                                data-block="dom_service" value="{{$item_service_image->serv_pict_image->icon_link}}">
+                        <input type="hidden" class="original_link" data-field-name="serv_pict" data-group="service_image"
+                               data-field-type="image" data-item-id="{{$item_service_image->id_field}}"
+                               data-block="dom_service" value="{{$item_service_image->serv_pict_image->original_link}}">
                     </div>
                     <div class="preview-block">
                         <img src="/images/{{$item_service_image->serv_pict_image->preview_link}}" class="preview"

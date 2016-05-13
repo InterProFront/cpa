@@ -21,7 +21,7 @@
 
                 <div class="hide-block">
                     @foreach($item->course_image_group as $img)
-                        <a href="/images/{{$img->course_pict_image->primary_link}}"></a>
+                        <a href="/images/{{$img->course_pict_image->original_link}}"></a>
                     @endforeach
                 </div>
             </div>
