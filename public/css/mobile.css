@@ -2266,6 +2266,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding-left: 20px;
+    white-space: normal;
     padding-top: 40px;
     padding-bottom: 60px;
   }
@@ -2280,6 +2281,7 @@
     -ms-flex-preferred-size: 150px;
     flex-basis: 150px;
     -webkit-box-align: center;
+    white-space: normal;
     margin-right: 10px;
   }
   section.content .company.index .col-1-1:first-child h1.block-title {
@@ -2297,6 +2299,7 @@
     -ms-flex-preferred-size: 100px;
     -webkit-box-align: center;
     flex-basis: 100px;
+    white-space: normal;
   }
   section.content .company.index .col-1-1:last-child .people {
     display: -webkit-box;
