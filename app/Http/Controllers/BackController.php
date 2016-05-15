@@ -106,10 +106,10 @@ class BackController extends Controller {
 	}
 
 	public function getContacts(){
-		$all =  $this->queryAgent->getBlock('safety_rules',[],[]);
+		$all =  $this->queryAgent->getBlock('static_contacts',[],[]);
 		$images = $this->queryAgent->getBlock('dom_all_images',[],[]);
-		return view('back.blocks.safety_rules',[
-			'safety_rules' => $all,
+		return view('back.blocks.static_contacts',[
+			'static_contacts' => $all,
 			'dom_all_images'  => $images
 		]);
 	}

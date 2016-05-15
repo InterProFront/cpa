@@ -94,4 +94,12 @@ class FrontController extends Controller {
 			'news'  => $news
 		]);
 	}
+	public function getContacts(){
+		$contacts = $this->queryAgent->getBlock('static_contacts',[],[]);
+
+		return view('front.contacts.contacts',[
+			'contact' => $contacts
+		]);
+	}
+
 }

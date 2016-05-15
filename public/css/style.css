@@ -1346,3 +1346,65 @@ h3.popup_title.center {
 .white-popup .row .input.error {
   border: 1px solid red;
 }
+
+
+
+
+
+.col-1-1 {
+  width: 100%;
+}
+
+.company.company-big .col-1-1 h1.big-title {
+  padding-left: 0;
+  margin-top: 0;
+}
+.contact-block {
+  background: url(../images/k2.png)88% 0% no-repeat;
+  padding-top: 63px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: flex-start;
+}
+.contact-block .col-1-2 {
+  padding-right: 60px;
+}
+
+.contact-block .col-1-2 strong {
+  color: #333333;
+}
+
+.contact-block .col-1-2 p {
+  padding-bottom: 0px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.contact-block .col-1-2 p:nth-child(4) {
+  padding-top: 13px;
+}
+.map-wrap {
+  margin-top: 60px;
+  background: url(../images/k1.png) left bottom no-repeat;
+  position: relative;
+  left: -60px;
+  padding-left: 60px;
+  padding-bottom: 170px;
+  width: 100%;
+}
+.map-block {
+  box-shadow: 0px 15px 40px 0px #999999;
+  height: 398px;
+}
+
+
+.contact-block p a {
+  color: #006699;
+}
+
+.contact-block p a:hover {
+  cursor: pointer;
+  color: #ff6666;
+}
+
+

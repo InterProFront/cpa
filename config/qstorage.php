@@ -101,6 +101,13 @@ return [
         ]
     ],
 
+    'static_contacts' => [
+        'title' => '',
+        'textfields' => ['map'],
+        'images'  => ['head']
+    ],
+
+
 
     //=================
 

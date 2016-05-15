@@ -38,6 +38,15 @@ return [
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
         ]
     ],
+    'static_contacts_head' => [
+        'sizes' => [
+            ['width' => 1000, 'height' => 370, 'sufix' => 'primary', 'mod' => false],
+            ['width' => 240, 'height' => null, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
     'static_company_people_photo' => [
         'sizes' => [
             ['width' => 130, 'height' => 130, 'sufix' => 'primary', 'mod' => false],
