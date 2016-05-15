@@ -42,12 +42,6 @@
                         <li class="menu-level-2"><a href="/adm/edit/slider">Слайдер</a></li>
                     </ul>
                 </li>
-                <li class="menu-level-1">
-                    <span class="menu-name">Настройки <i class="triangle">▲</i></span>
-                    <ul class="sub-menu">
-                        <li class="menu-level-2"><a href="#">text 1 </a></li>
-                    </ul>
-                </li>
                 <li class="menu-level-1"><span class="menu-end"></span></li>
             </ul>
         </nav>

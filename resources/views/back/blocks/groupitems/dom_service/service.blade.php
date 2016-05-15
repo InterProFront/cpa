@@ -1,5 +1,5 @@
 <tr data-sorter="{{$item_service->sorter_field}}" data-id="{{$item_service->id_field}}">
-    <td><a href="">{{$item_service->name_field}}</a></td>
+    <td><a href="">{{$item_service->service_name_field}}</a></td>
     <td></td>
     <td>
         <select class="publicated">
