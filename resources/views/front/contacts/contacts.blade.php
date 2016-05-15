@@ -5,7 +5,7 @@
         <div class="head-image">
             <img src="/images/{{$contact->head_image->primary_link}}" alt="">
         </div>
-        @include('front.tb.menu')
+        @include('front.contacts.menu')
         @yield('menu')
         <div class="company company-big">
             <div class="study-block news">

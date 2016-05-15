@@ -20,8 +20,12 @@
                 @include('front.study.photo')
 
                 <div class="hide-block">
+                    <?php $it = 0 ?>
                     @foreach($item->course_image_group as $img)
+                        <?php $it++ ?>
+                        @if($it > 6)
                         <a href="/images/{{$img->course_pict_image->original_link}}"></a>
+                        @endif
                     @endforeach
                 </div>
             </div>

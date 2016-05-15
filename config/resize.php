@@ -104,7 +104,7 @@ return [
     ],
     'service_image_serv_pict' => [
         'sizes' => [
-            ['width' => 800, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 800, 'height' => 800, 'sufix' => 'primary'],
             ['width' => 230, 'height' => 230, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
@@ -113,7 +113,7 @@ return [
     ],
     'course_image_course_pict' => [
         'sizes' => [
-            ['width' => 800, 'height' => null, 'sufix' => 'primary'],
+            ['width' => 800, 'height' => 800, 'sufix' => 'primary'],
             ['width' => 230, 'height' => 230, 'sufix' => 'secondary'],
             ['width' => 160, 'height' => 90, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],

@@ -11,8 +11,12 @@
                 @include('front.service.photo')
 
                 <div class="hide-block">
+                    <?php $it = 0 ?>
                     @foreach($item->service_image_group as $img)
-                        <a href="/images/{{$img->serv_pict_image->primary_link}}"></a>
+                        <?php $it++ ?>
+                        @if($it > 6)
+                        <a href="/images/{{$img->serv_pict_image->original_link}}"></a>
+                        @endif
                     @endforeach
                 </div>
             </div>
