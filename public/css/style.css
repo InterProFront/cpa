@@ -600,7 +600,6 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   margin: 0 auto;
 }
 .clients-block ul.clients-block {
-  padding: 5px 120px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -617,11 +616,14 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   flex-wrap: wrap;
   box-sizing: border-box;
   max-width: 1000px;
-  margin: 0 auto;
   text-align: center;
+  margin: 0 auto;
 }
 .clients-block ul.clients-block li.client {
   padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 .company.company-big {
   display: -webkit-box;
