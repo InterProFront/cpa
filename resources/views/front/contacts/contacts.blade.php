@@ -1,7 +1,7 @@
 @extends('front.layout')
 <?php $title = 'Техника безопасности — Центр Промышленного Альпинизма'?>
 @section('content')
-    <section class="content">
+    <section class="content cont">
         <div class="head-image">
             <img src="/images/{{$contact->head_image->primary_link}}" alt="">
         </div>

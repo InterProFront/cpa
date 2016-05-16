@@ -2602,4 +2602,7 @@
   ul.clients-block {
     padding: 60px;
   }
+  section.content.cont .company.company-big .study-block.news {
+    flex-basis: 1200px;
+  }
 }
