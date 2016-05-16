@@ -1875,8 +1875,9 @@
   section.content .company.company-big .study-block.news {
     padding: 50px 10px 50px 0;
     margin-left: 0;
-    -webkit-flex-basis: 100%;
-    -ms-flex-preferred-size: 100%;
+    -webkit-flex-basis: 2350px;
+    -ms-flex-preferred-size: 2350px;
+    flex-basis: 2350px;
     display: block;
   }
   section.content .company.company-big .study-block.news .wrap {
