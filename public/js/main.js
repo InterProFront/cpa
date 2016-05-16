@@ -22,6 +22,13 @@ $(document).ready(function(){
         }
     });
 
+
+
+    //selectmenu
+    $('.white-popup select').selectmenu({});
+
+
+
     //Инициализация галлереи
 
     for(var i = 1; i<= 6; i++){
