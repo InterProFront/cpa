@@ -2357,7 +2357,7 @@
   }
   section.content .company.index .col-1-1:last-child .people .wrap .name {
     font-weight: bold;
-    margin-top: 0px;
+    margin-top: 10px;
     color: #333333;
   }
   section.content .company.index .col-1-1:last-child .people .say {
