@@ -67,7 +67,7 @@
     position: relative;
     margin-top: 10px;
     color: #333333;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   section.content .company.company-big .full-size-descr {
     padding-top: 60px;
@@ -955,7 +955,7 @@
     position: relative;
     margin-top: 10px;
     color: #333333;
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
   section.content .company.company-big .full-size-descr {
     padding-top: 60px;
@@ -1850,8 +1850,9 @@
     position: relative;
     margin-top: 10px;
     color: #333333;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding-left: 20px;
+    margin-top: 20px;
   }
   section.content .company.company-big .full-size-descr {
     padding-top: 60px;
