@@ -1879,6 +1879,7 @@
     -ms-flex-preferred-size: 900px;
     flex-basis: 900px;
     max-width: 900px;
+    display: block;
   }
   section.content .company.company-big .study-block.news .wrap {
     -webkit-box-pack: justify;
