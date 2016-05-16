@@ -2528,7 +2528,9 @@
     padding-top: 0;
   }
   section.content .big-block .service-row .col-1-2:last-child .law img {
-    max-width: 40%;
+    max-width: 30%;
+    height: 100px;
+    padding-top: 60px;
   }
   section.content .big-block .service-row .col-1-2:last-child .law p.text {
     padding-top: 50px;
