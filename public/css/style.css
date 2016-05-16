@@ -229,7 +229,7 @@ button.button.disabled {
   position: absolute;
   left: 100px;
   z-index: 200;
-  margin-top: -70px;
+  margin-top: -150px;
 }
 .bx-controls.bx-has-pager .bx-pager-item {
   display: inline-block;
