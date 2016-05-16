@@ -586,6 +586,7 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   padding-left: 25px;
   padding-top: 15px;
   line-height: 21px;
+  width: 155px;
 }
 .clients-block {
   background: #ffffff;
