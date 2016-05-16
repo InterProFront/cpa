@@ -2300,6 +2300,7 @@
     padding-left: 20px;
     white-space: normal;
     padding-top: 40px;
+    display: block;
     padding-bottom: 60px;
   }
   section.content .company.index .col-1-1 {
@@ -2471,6 +2472,7 @@
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding-bottom: 60px;
+    display: block;
     background: #ffffff;
   }
   section.content .big-block .service-row .col-1-2:first-child {
