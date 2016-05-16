@@ -852,7 +852,7 @@
   }
   .slider-wrapper .bx-wrapper .slider-content li.slide .text-wrap {
     position: absolute;
-    top: 79.2%;
+    /* top: 79.2%; */
     left: 0;
     padding: 17px 25px 25px 17px;
     background: #0b4171;
@@ -1738,10 +1738,11 @@
   }
   .slider-wrapper .bx-wrapper .slider-content li.slide .text-wrap {
     position: absolute;
-    top: 79.2%;
     left: 0;
+    top: auto;
     padding: 17px 25px 25px 17px;
     background: #0b4171;
+    bottom: 4px;
   }
   .slider-wrapper .bx-wrapper .slider-content li.slide .text-wrap .slide-name {
     color: #ffffff;
