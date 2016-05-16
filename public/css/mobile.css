@@ -2595,4 +2595,7 @@
     padding-bottom: 10px;
     line-height: 21px;
   }
+  li.fact {
+    text-align: center;
+  }
 }

@@ -618,6 +618,7 @@ nav.main-menu ul.menu div.popup-menu li.item.active a.menu-item {
   box-sizing: border-box;
   max-width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 .clients-block ul.clients-block li.client {
   padding: 10px;
