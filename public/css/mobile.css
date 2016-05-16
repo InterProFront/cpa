@@ -2142,6 +2142,7 @@
     -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
     margin-right: 40px;
+    display: block;
   }
   section.content .company.company-big .news-block .news-top .col-1-2:first-child .big-news-wrap .big-news .news {
     margin-bottom: 50px;
