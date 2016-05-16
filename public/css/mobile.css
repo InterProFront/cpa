@@ -2309,9 +2309,8 @@
     flex-basis: 150px;
     -webkit-box-align: center;
     white-space: normal;
-    min-height: 725px;
-    height: 100%;
     margin-right: 10px;
+    display: block;
   }
   section.content .company.index .col-1-1:first-child h1.block-title {
     font-weight: normal;
@@ -2329,8 +2328,8 @@
     -webkit-box-align: center;
     flex-basis: 100px;
     white-space: normal;
-    min-height: 256px;
     height: 100%;
+    display: block;
   }
   section.content .company.index .col-1-1:last-child .people {
     display: -webkit-box;
