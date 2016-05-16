@@ -177,12 +177,15 @@
   }
   section.content .company.company-big .study-block.news .wrap .col:last-child.new .news-wrap-block .news {
     margin-bottom: 50px;
+    box-sizing: border-box;
+    padding-right: 50px;
   }
   section.content .company.company-big .study-block.news .wrap .col:last-child.new .news-wrap-block .news p.news-title {
     padding-left: 0;
     padding-bottom: 0;
     margin-bottom: 0;
     font-weight: normal;
+    max-width: 285px;
   }
   section.content .company.company-big .study-block.news .wrap .col:last-child.new .news-wrap-block .news p.news-title a {
     color: #666666;
