@@ -2598,4 +2598,7 @@
   li.fact {
     text-align: center;
   }
+  ul.clients-block {
+    padding: 60px;
+  }
 }
