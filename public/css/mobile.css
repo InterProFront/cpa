@@ -2135,6 +2135,7 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    display: block;
   }
   section.content .company.company-big .news-block .news-top .col-1-2:first-child {
     padding-top: 10px;
