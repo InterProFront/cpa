@@ -74,20 +74,6 @@
                 <p class="text">05.05.14</p>
             </div>
             <div class="row">
-                <label>Дополнительно</label>
-                <div class="buttons-block">
-                    <button class="info">
-                        info
-                    </button>
-                    <button class="smm">
-                        smm
-                    </button>
-                    <button class="preview">
-                        preview
-                    </button>
-                </div>
-            </div>
-            <div class="row">
                 <div class="buttons-block two">
                     <button class="save_all">Сохранить</button>
                     <div class="progress-bar">

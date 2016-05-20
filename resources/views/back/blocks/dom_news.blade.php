@@ -49,7 +49,6 @@
             </div>
         </div>
         <div class="field-wrap ">
-            <label class="input-file">
                 <ul class="group-block group_container" data-block="dom_news" data-group="news" data-owner-id="0">
                     @foreach($dom_news->news_group as $item_news )
                         @include('back.blocks.groupitems.dom_news.news')
@@ -58,7 +57,6 @@
                 <button class="any_create" data-block="dom_news" data-group="news" data-descr="Эл. первой группы"
                         data-owner-id="0"> Добавить
                 </button>
-            </label>
         </div>
         <div class="field-wrap buttons">
             <button class="btn btn-primary pull-right any_save" data-block="dom_news" data-entity="block" data-descr="">

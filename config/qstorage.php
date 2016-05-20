@@ -106,6 +106,11 @@ return [
         'textfields' => ['map'],
         'images'  => ['head']
     ],
+    'test_block' => [
+        'title' => '',
+        'textfields' => ['map'],
+        'images'  => ['head']
+    ],
 
 
 
