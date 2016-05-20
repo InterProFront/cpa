@@ -22,8 +22,13 @@ $(document).ready(function(){
         }
     });
 
-
-
+    lastScrollTop = 0;
+    height = 0;
+    $(window).on('scroll', function(){
+        if($(window).scrollTop() < 1300){
+            $('.a1 .rope').css('height',$(window).scrollTop() +'px');
+        }
+    });
     //selectmenu
     $('.white-popup select').selectmenu({});
 

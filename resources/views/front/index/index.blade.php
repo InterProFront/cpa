@@ -43,7 +43,6 @@
         </div>
         <div class="big-block">
             <div class="image-wrap">
-                <img src="/images/bg-1.png" alt="">
             </div>
             <div class="link-block">
                 <p class="link-p">
