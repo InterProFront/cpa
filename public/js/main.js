@@ -24,6 +24,12 @@ $(document).ready(function(){
 
     a2 = false;
     a3 = false;
+
+    if (window.location.pathname != ''){
+        $('.a1').css('opacity',0);
+        $('.a2').css('opacity',0);
+        $('.a3').css('opacity',0);
+    }
     $(window).on('scroll', function(){
         if($(window).scrollTop() < ($('.link-block').offset().top+300) ){
             $('.a1 .rope').css('height', $(window).scrollTop());
@@ -37,10 +43,9 @@ $(document).ready(function(){
         if( $(window).scrollTop() >= ($('.facts').offset().top -200)){
             $('.a3 .rope').css('height', 480);
             a3 = true;
-        }else if(a3 && ($(window).scrollTop() <= ($('.facts').offset().top -200)) ){
+        }else if(a3 && ($(window).scrollTop() <= ($('.facts').offset().top -200)) ) {
             $('.a3 .rope').css('height', 0);
         }
-
 
     });
     //selectmenu
