@@ -24,6 +24,10 @@
             <div class="rope"></div>
             <img src="2.PNG" alt="">
         </div>
+        <div class="a3">
+            <div class="rope"></div>
+            <img src="1.PNG" alt="">
+        </div>
         @yield('content')
     </div>
         @include('front.footer')

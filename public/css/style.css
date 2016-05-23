@@ -1447,7 +1447,20 @@ h3.popup_title.center {
 .a2 .rope {
   background: url(../strope.PNG) repeat-y;
   width: 100%;
-  height: 0px;
+  height: 810px;
+  display: block;
+  transition: all 1s ease;
+}
+.a3 {
+  position: absolute;
+  left: 35%;
+  top: 1730px;
+}
+
+.a3 .rope {
+  background: url(../strope.PNG) repeat-y;
+  width: 100%;
+  height: 0;
   display: block;
   transition: all 1s ease;
 }

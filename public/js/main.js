@@ -25,12 +25,16 @@ $(document).ready(function(){
     lastScrollTop = 0;
     height = 0;
     $(window).on('scroll', function(){
-        if($(window).scrollTop() < ($('.link-block').offset().top+200) ){
+        if($(window).scrollTop() < ($('.link-block').offset().top+300) ){
             $('.a1 .rope').css('height', $(window).scrollTop());
         }
-        if( $(window).scrollTop() >= 1200 ){
+        if( $(window).scrollTop() >= ($('.link-block').offset().top -200)){
             $('.a2 .rope').css('height', 400);
         }
+        if( $(window).scrollTop() >= ($('.facts').offset().top -200)){
+            $('.a3 .rope').css('height', 480);
+        }
+
 
     });
     //selectmenu
