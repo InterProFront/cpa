@@ -25,7 +25,7 @@ $(document).ready(function(){
     a2 = false;
     a3 = false;
 
-    if ( (window.location.pathname).length > 0 ){
+    if ( (window.location.pathname).length > 1 ){
         $('.a1').css('opacity',0);
         $('.a2').css('opacity',0);
         $('.a3').css('opacity',0);
