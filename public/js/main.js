@@ -29,6 +29,7 @@ $(document).ready(function(){
         $('.a1').css('opacity',0);
         $('.a2').css('opacity',0);
         $('.a3').css('opacity',0);
+        $('.parallax-div').css('background','none');
     }
     $(window).on('scroll', function(){
         if($(window).scrollTop() < ($('.link-block').offset().top+300) ){
