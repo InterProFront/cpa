@@ -1424,11 +1424,11 @@ h3.popup_title.center {
 /* parallax */
 
 .parallax-div {
-  background: url(../build.PNG) no-repeat 100% calc(100% - 460px);
+  background: url(../build.PNG) no-repeat 94% calc(100% - 460px);
 }
 .a1 {
   position: absolute;
-  right: 290px;
+  right: 310px;
 }
 
 .a1 .rope {
@@ -1462,5 +1462,5 @@ h3.popup_title.center {
   width: 100%;
   height: 0;
   display: block;
-  transition: all 1s ease;
+  transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
