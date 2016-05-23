@@ -1,4 +1,11 @@
 @media screen and (max-width: 1024px) and (min-width: 768px) {
+  .a1 {
+    right: 195px;
+  }
+
+  .a2 {
+    left: 100px;
+  }
   section.content nav.main-menu ul.menu div.popup-menu {
     display: -webkit-box;
     display: -webkit-flex;
@@ -830,6 +837,9 @@
   }
 }
 @media screen and (max-width: 768px) and (min-width: 425px) {
+  .parallax-div .a1, .parallax-div .a2 {
+    display: none;
+  }
   header.header .head {
     padding: 0 20px 20px;
   }
@@ -1670,6 +1680,9 @@
   }
 }
 @media screen and (max-width: 425px) and (min-width: 320px) {
+  .parallax-div .a1, .parallax-div .a2 {
+    display: none;
+  }
   .header .head .col-1-1:last-child .row ul.header-menu li.item a {
     font-size: 12px;
   }
