@@ -26,9 +26,9 @@ $(document).ready(function(){
     a3 = false;
 
     if ( (window.location.pathname).length > 1 ){
-        $('.a1').css('opacity',0);
-        $('.a2').css('opacity',0);
-        $('.a3').css('opacity',0);
+        $('.a1').css('display','none');
+        $('.a2').css('display','none');
+        $('.a3').css('display','none');
         $('.parallax-div').css('background','none');
     }
     $(window).on('scroll', function(){
