@@ -22,17 +22,23 @@ $(document).ready(function(){
         }
     });
 
-    lastScrollTop = 0;
-    height = 0;
+    a2 = false;
+    a3 = false;
     $(window).on('scroll', function(){
         if($(window).scrollTop() < ($('.link-block').offset().top+300) ){
             $('.a1 .rope').css('height', $(window).scrollTop());
         }
         if( $(window).scrollTop() >= ($('.link-block').offset().top -200)){
             $('.a2 .rope').css('height', 400);
+            a2 = true;
+        }else if(a2 && ($(window).scrollTop() <= ($('.link-block').offset().top -200)) ){
+            $('.a2 .rope').css('height', 800);
         }
         if( $(window).scrollTop() >= ($('.facts').offset().top -200)){
             $('.a3 .rope').css('height', 480);
+            a3 = true;
+        }else if(a3 && ($(window).scrollTop() <= ($('.facts').offset().top -200)) ){
+            $('.a3 .rope').css('height', 0);
         }
 
 
