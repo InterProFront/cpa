@@ -100,6 +100,10 @@ $(document).ready(function(){
 
         });
     });
+    $('.ui-selectmenu-button').on('click',function(){
+        width = $(this).outerWidth();
+        $('.ui-menu').css('width',width-2);
+    });
 
 
 });

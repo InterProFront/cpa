@@ -276,7 +276,7 @@ nav.main-menu ul.menu div.popup-menu {
 }
 nav.main-menu ul.menu div.popup-menu li.item {
   padding: 22px 30px 20px 31px;
-  background: #13191f;
+  background: #003366;
   width: auto;
 }
 nav.main-menu ul.menu div.popup-menu li.item:last-child {
@@ -288,16 +288,16 @@ nav.main-menu ul.menu div.popup-menu li.item a.menu-item {
   background: none;
 }
 nav.main-menu ul.menu div.popup-menu li.item:hover {
-  background: #2b3036;
+  background: #ffffff;
   cursor: pointer;
 }
 nav.main-menu ul.menu div.popup-menu li.item:hover a.menu-item {
   color: #ff6666;
-  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#6b4044), to(#6b4044));
-  background: -webkit-linear-gradient(to left, #6b4044, #6b4044 90%);
-  background: -webkit-gradient(linear, right top, left top, from(#6b4044), color-stop(90%, #6b4044));
-  background: -webkit-linear-gradient(right, #6b4044, #6b4044 90%);
-  background: linear-gradient(to left, #6b4044, #6b4044 90%);
+  background: -webkit-gradient(to linear, 0 0, 90% 0, from(#ffcccc), to(#ffcccc));
+  background: -webkit-linear-gradient(to left, #ffcccc, #ffcccc 90%);
+  background: -webkit-gradient(linear, right top, left top, from(#ffcccc), color-stop(90%, #ffcccc));
+  background: -webkit-linear-gradient(right, #ffcccc, #ffcccc 90%);
+  background: linear-gradient(to left, #ffcccc, #ffcccc 90%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@link-border-hover', endColorstr='@link-border-hover', GradientType=0);
   background-position: 0 97%;
   background-size: 10px 1px;
