@@ -272,7 +272,7 @@ nav.main-menu ul.menu div.popup-menu {
   -ms-flex-pack: start;
   justify-content: flex-start;
   margin-left: 10%;
-  background: #13191f;
+  background: #003366;
 }
 nav.main-menu ul.menu div.popup-menu li.item {
   padding: 22px 30px 20px 31px;
@@ -1440,7 +1440,7 @@ h3.popup_title.center {
 }
 .a2 {
   position: absolute;
-  left: 395px;
+  left: 35%;
   top: 900px;
 }
 
