@@ -114,10 +114,10 @@ return [
     'course_image_course_pict' => [
         'sizes' => [
             ['width' => 800, 'height' => 800, 'sufix' => 'primary'],
-            ['width' => 230, 'height' => 230, 'sufix' => 'secondary'],
+            ['width' => null, 'height' => 230, 'sufix' => 'secondary'],
             ['width' => 160, 'height' => 90, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
-            ['width' => 110, 'height' => 110, 'sufix' => 'icon'],
+            ['width' => null, 'height' => 110, 'sufix' => 'icon'],
         ]
     ],
     'images_set_text_pict' => [
