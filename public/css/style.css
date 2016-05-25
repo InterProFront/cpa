@@ -1424,7 +1424,10 @@ h3.popup_title.center {
 /* parallax */
 
 .parallax-div {
-  background: url(../build.PNG) no-repeat 94% calc(100% - 460px);
+  background: url(../build.PNG) no-repeat 100% calc(100% - 460px);
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
 }
 .a1 {
   position: absolute;
