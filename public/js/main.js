@@ -39,7 +39,7 @@ $(document).ready(function(){
             $('.a2 .rope').css('height', 400);
             a2 = true;
         }else if(a2 && ($(window).scrollTop() <= ($('.link-block').offset().top -200)) ){
-            $('.a2 .rope').css('height', 800);
+            $('.a2 .rope').css('height', 760);
         }
         if( $(window).scrollTop() >= ($('.facts').offset().top -200)){
             $('.a3 .rope').css('height', 480);
