@@ -41,13 +41,6 @@ $(document).ready(function(){
         }else if(a2 && ($(window).scrollTop() <= ($('.link-block').offset().top -200)) ){
             $('.a2 .rope').css('height', 760);
         }
-        if( $(window).scrollTop() >= ($('.facts').offset().top -200)){
-            $('.a3 .rope').css('height', 480);
-            a3 = true;
-        }else if(a3 && ($(window).scrollTop() <= ($('.facts').offset().top -200)) ) {
-            $('.a3 .rope').css('height', 0);
-        }
-
     });
     //selectmenu
     $('.white-popup select').selectmenu({});
