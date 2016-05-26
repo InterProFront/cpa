@@ -1441,6 +1441,7 @@ h3.popup_title.center {
   height: 0;
   display: block;
   transition: all 1s ease;
+  z-index: 3;
 }
 .a2 {
   position: absolute;
@@ -1454,4 +1455,14 @@ h3.popup_title.center {
   height: 810px;
   display: block;
   transition: all 1s ease;
+}
+.a1 .rope-bottom {
+  content: "";
+  background: url(../strope3.png) repeat-y -52px;
+  height: 3px;
+  width: 141px;
+  position: absolute;
+  top: 265px;
+  height: 2305px;
+  z-index: 1;
 }

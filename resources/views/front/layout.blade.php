@@ -19,6 +19,7 @@
         <div class="a1">
             <div class="rope"></div>
             <img src="1.PNG" alt="">
+            <div class="rope-bottom"></div>
         </div>
         <div class="a2">
             <div class="rope"></div>

@@ -35,6 +35,9 @@ $(document).ready(function(){
         if($(window).scrollTop() < ($('.link-block').offset().top+300) ){
             $('.a1 .rope').css('height', $(window).scrollTop());
         }
+
+
+        
         if( $(window).scrollTop() >= ($('.link-block').offset().top -200)){
             $('.a2 .rope').css('height', 400);
             a2 = true;
