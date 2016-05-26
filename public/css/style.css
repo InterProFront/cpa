@@ -1465,4 +1465,5 @@ h3.popup_title.center {
   top: 265px;
   height: 2305px;
   z-index: 1;
+  display: none;
 }

@@ -37,7 +37,7 @@ $(document).ready(function(){
         }
 
 
-        
+
         if( $(window).scrollTop() >= ($('.link-block').offset().top -200)){
             $('.a2 .rope').css('height', 400);
             a2 = true;
