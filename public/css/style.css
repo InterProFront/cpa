@@ -1458,12 +1458,12 @@ h3.popup_title.center {
 }
 .a1 .rope-bottom {
   content: "";
-  background: url(../strope3.png) repeat-y -52px;
+  background: url(../strope3.png) repeat-y -53px;
   height: 3px;
   width: 141px;
-  position: absolute;
-  top: 265px;
-  height: 2305px;
+  position: relative;
+  height: 1130px;
   z-index: 1;
-  display: none;
+  top: -5px;
+  display: block;
 }

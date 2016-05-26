@@ -34,6 +34,7 @@ $(document).ready(function(){
     $(window).on('scroll', function(){
         if($(window).scrollTop() < ($('.link-block').offset().top+300) ){
             $('.a1 .rope').css('height', $(window).scrollTop());
+            $('.a1 .rope-bottom').css('height', $('section').height() - $(window).scrollTop() );
         }
 
 
