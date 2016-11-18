@@ -56,7 +56,11 @@
       display: flex;
       justify-content: center;
       .menu-item {
+
         a {
+          &.active {
+            background: @menu-hover;
+          }
           background: @menu-default;
           display: inline-block;
           padding: 20px 30px;
