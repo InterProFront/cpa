@@ -4,7 +4,7 @@
     <section class="content-wrap">
         <div class="page-head">
             <div class="preload">
-             <img src="https://www.zixcorp.com/sites/default/files/styles/page_image/public/Zix%20Slider-wo%20the%20Hassle%20(large,%20cropped)_full.jpg?itok=hzAFi1sI" alt="" class="page-title-image loaded" data-preload="">
+             <img src="/img/head.png" alt="" class="page-title-image loaded" data-preload="">
             </div>
         </div>
         <div class="main-content">
