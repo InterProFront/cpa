@@ -4,7 +4,7 @@
     <section class="content-wrap">
         <div class="page-head">
             <div class="preload">
-                <img src="/img/head.png" alt="" class="page-title-image loaded" data-preload="">
+                <img src="/img/head.png" alt="" class="page-title-image" data-preload="">
             </div>
         </div>
         <div class="main-content">

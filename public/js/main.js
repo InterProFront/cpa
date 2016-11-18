@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
     $('.menu-item a').each(function(){
-       if( $(this).attr('href') == window.location.pathname ){
+       if( $(this).attr('href') == window.location.pathname && $(this).attr('href') != '/' ){
            $(this).addClass('active');
        }
     });
