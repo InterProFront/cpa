@@ -1,8 +1,5 @@
 @section('footer')
     <footer class="footer">
-        <div class="footer-img">
-            <div class="footer-image-wrap"><img src="/images/footer.png" alt=""></div>
-        </div>
         <div class="foot">
             <div class="col-1-2">
                 <p class="adress">Республика Казахстан, 050000, Алматы <br>

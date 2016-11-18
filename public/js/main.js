@@ -2,56 +2,39 @@
  * Created by Косаностра on 21.04.2016.
  */
 $(document).ready(function(){
-    // Слайдер на главной
-    $('.slider-content').bxSlider({
-        mode: 'fade',
-        pager: true,
-        controls: false
-    });
 
-    //Меню для мобильных экранов
-    $('.menu-button').on('click',function(){
-        $('.popup-menu').slideToggle();
+//======================================================================================================================
+//-- Меню для мобильных устройств --
+//======================================================================================================================
+    $('.hamburger').on('click',function(){
+        $(this).toggleClass('is-active');
+        $('.popup-wrap').slideToggle();
     });
 
     $(window).on('resize',function(){
-        if ($(window).width() >= '900' ){
-            $('.popup-menu').css('display','flex');
+        if ($(window).width() >= '720' ){
+            $('.popup-wrap').css('display','block');
         }else{
-            $('.popup-menu').css('display','none');
+            if( !$('.hamburger').hasClass('is-active') ){
+                $('.popup-wrap').css('display', 'none');
+            }
         }
     });
 
-    a2 = false;
-    a3 = false;
+//======================================================================================================================
+//-- Выпадающее меню в слайдере  --
+//======================================================================================================================
 
-    if ( (window.location.pathname).length > 1 ){
-        $('.a1').css('display','none');
-        $('.a2').css('display','none');
-        $('.a3').css('display','none');
-        $('.parallax-div').css('background','none');
-    }
-    $(window).on('scroll', function(){
-        if($(window).scrollTop() < ($('.link-block').offset().top+300) ){
-            $('.a1 .rope').css('height', $(window).scrollTop());
-            $('.a1 .rope-bottom').css('height', $('section').height() - $(window).scrollTop() );
-        }
+    $('.white-popup select').selectmenu({}); // инициализация выпадающего списка
 
-
-
-        if( $(window).scrollTop() >= ($('.link-block').offset().top -200)){
-            $('.a2 .rope').css('height', 400);
-            a2 = true;
-        }else if(a2 && ($(window).scrollTop() <= ($('.link-block').offset().top -200)) ){
-            $('.a2 .rope').css('height', 760);
-        }
+    $('.ui-selectmenu-button').on('click',function(){ // Функция для урезания размера выпадющего элемента то размеров поля
+        width = $(this).outerWidth();
+        $('.ui-menu').css('width',width-2);
     });
-    //selectmenu
-    $('.white-popup select').selectmenu({});
 
-
-
-    //Инициализация галлереи
+//======================================================================================================================
+//-- LightBox Галлерея --
+//======================================================================================================================
 
     for(var i = 1; i<= 6; i++){
         $('#gall_'+i+' a').magnificPopup({
@@ -59,38 +42,52 @@ $(document).ready(function(){
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
-                preload: [0,1], // Will preload 0 - before current, and 1 after the current image
+                preload: [0,1],
                 tCounter: '%curr% из %total%'
             }
         });
     }
 
-    //popups
+//======================================================================================================================
+//--  --
+//======================================================================================================================
+
+    $('.page-title-image').on('load',function(){
+        $(this).removeClass('loaded');
+    });
+
+//======================================================================================================================
+//-- Всплывающие формы --
+//======================================================================================================================
     $('.ask').magnificPopup({
-       type:'inline',
+        removalDelay: 500,
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass ='mfp-zoom-in';
+            }
+        },
         midClick: true
     });
 
     $('.join').magnificPopup({
-        type:'inline',
+        removalDelay: 500,
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass ='mfp-zoom-in';
+            }
+        },
         midClick: true
     });
     $('.buy_service').magnificPopup({
-        type:'inline',
+        removalDelay: 500,
+        callbacks: {
+            beforeOpen: function() {
+                this.st.mainClass ='mfp-zoom-in';
+            }
+        },
         midClick: true
     });
 
-
-
-    $('.anchor .link').on('click',function(){
-        var offser = $($(this).attr('href')).offset().top;
-        $("html, body").animate({ scrollTop: offser }, 600);
-    });
-
-    //im so sorry, fix it
-    $('.popup-menu .item').on('click',function(){
-        document.location.href = $(this).children('.menu-item').attr('href');
-    });
 
     $.ajaxSetup({
         headers: {
@@ -113,10 +110,4 @@ $(document).ready(function(){
 
         });
     });
-    $('.ui-selectmenu-button').on('click',function(){
-        width = $(this).outerWidth();
-        $('.ui-menu').css('width',width-2);
-    });
-
-
 });

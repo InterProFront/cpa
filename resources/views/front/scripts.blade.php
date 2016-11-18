@@ -4,5 +4,5 @@
     <script src="/js/jquery.magnific-popup.min.js"></script>
     <script src="/js/jquery-ui.min.js"></script>
     <script src="/js/main.js"></script>
-    <script src="/js/send.js"></script>
+    <script src="/js/popupForm.js"></script>
 @endsection

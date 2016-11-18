@@ -12,26 +12,15 @@
 
 <body>
 <div class="wrapper">
-
         @include('front.header')
         @yield('header')
-    <div class="parallax-div">
-        <div class="a1">
-            <div class="rope"></div>
-            <img src="1.PNG" alt="">
-            <div class="rope-bottom"></div>
-        </div>
-        <div class="a2">
-            <div class="rope"></div>
-            <img src="2.PNG" alt="">
-        </div>
+
         @yield('content')
-    </div>
         @include('front.footer')
         @yield('footer')
 
 </div>
-<div class="popup-hider">
+<div class="hidden">
     @include('front.popups.ask')
     @include('front.popups.join')
     @include('front.popups.serv')
@@ -40,8 +29,10 @@
     @yield('join')
     @yield('serv')
     @yield('thank')
+    <a href="#thanks" class="thank"></a>
 </div>
 @include('front.scripts')
 @yield('scripts')
 </body>
+
 </html>

@@ -3,7 +3,7 @@ return [
 
     'static_all_site_logo' => [
         'sizes' => [
-            ['width' => 64, 'height' => 95, 'sufix' => 'primary', 'mod' => false],
+            ['width' => 70, 'height' => 100, 'sufix' => 'primary', 'mod' => false],
             ['width' => 240, 'height' => null, 'sufix' => 'secondary'],
             ['width' => 100, 'height' => null, 'sufix' => 'preview'],
             ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
@@ -93,6 +93,9 @@ return [
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
         ]
     ],
+//======================================================================================================================
+//--  --
+//======================================================================================================================
     'static_study_head' => [
         'sizes' => [
             ['width' => 1000, 'height' => 370, 'sufix' => 'primary'],
