@@ -15,7 +15,7 @@
             </div>
             <div class="content-grid">
                 <div class="page-block">
-                    <a href="/">
+                    <a href="/study">
                         <div class="image-wrap">
                             <img src="/img/1.png" alt="">
                         </div>
