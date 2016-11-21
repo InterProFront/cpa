@@ -34,6 +34,13 @@ class FrontController extends Controller
     {
         return view('front/study/study', []);
     }
+    public function getStudyItem(){
+        return view('front/study/study_item',[]);
+    }
+
+
+
+
 
     public function getServices()
     {

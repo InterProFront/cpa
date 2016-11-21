@@ -46,6 +46,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'adm'], function(){
 
 Route::get('/', 'FrontController@getIndex');
 Route::get('/study', 'FrontController@getStudy');
+Route::get('/study/item', 'FrontController@getStudyItem');
 
 Route::get('/tb', 'FrontController@getTb');
 Route::get('/contacts', 'FrontController@getContacts');
