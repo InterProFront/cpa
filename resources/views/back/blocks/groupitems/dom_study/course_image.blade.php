@@ -1,9 +1,11 @@
 <li class="group" data-group-id="{{$item_course_image->id_field}}">
     <div class="title-block">
-        <lable class="group-title">Фотография курса</lable>
+        <label class="group-title">
+            Изображение в правом блоке
+        </label>
         <button type="button" class="any_delete" data-block="dom_study" data-group="course_image"
-                data-entity="groupitem" data-item-id="{{$item_course_image->id_field}}"
-                data-descr="Эл. первой группы"> Удалить
+                data-entity="groupitem" data-item-id="{{$item_course_image->id_field}}" data-descr="Эл. первой группы">
+            Удалить
         </button>
     </div>
     <div class="block ">
@@ -18,6 +20,10 @@
                         <input type="hidden" class="prefix" data-field-name="course_pict" data-group="course_image"
                                data-field-type="image" data-item-id="{{$item_course_image->id_field}}"
                                data-block="dom_study" value="{{$item_course_image->course_pict_image->prefix}}">
+                        <input type="hidden" class="original_link" data-field-name="course_pict"
+                               data-group="course_image" data-field-type="image"
+                               data-item-id="{{$item_course_image->id_field}}" data-block="dom_study"
+                               value="{{$item_course_image->course_pict_image->original_link}}">
                         <input type="hidden" class="preview_link" data-field-name="course_pict"
                                data-group="course_image" data-field-type="image"
                                data-item-id="{{$item_course_image->id_field}}" data-block="dom_study"
@@ -33,9 +39,6 @@
                         <input type="hidden" class="icon_link" data-field-name="course_pict" data-group="course_image"
                                data-field-type="image" data-item-id="{{$item_course_image->id_field}}"
                                data-block="dom_study" value="{{$item_course_image->course_pict_image->icon_link}}">
-                        <input type="hidden" class="original_link" data-field-name="course_pict" data-group="course_image"
-                               data-field-type="image" data-item-id="{{$item_course_image->id_field}}"
-                               data-block="dom_study" value="{{$item_course_image->course_pict_image->original_link}}">
                     </div>
                     <div class="preview-block">
                         <img src="/images/{{$item_course_image->course_pict_image->preview_link}}" class="preview"

@@ -31,13 +31,12 @@ return [
     'dom_study'         => [
         'images'       => ['background', 'index_preview'],
         'stringfields' => ['seo_title', 'seo_description', 'seo_keywords', 'seo_text', 'page_name', 'preview_text'],
-        'textfields'   => ['page_content'],
+        'textfields'   => ['page_content','preview_content'],
         'groups'       => [
             'course'       => [
-                'stringfields' => ['seo_title', 'seo_description', 'seo_keywords', 'seo_text', 'page_name', 'preview_text'],
-                'textfields'   => ['page_content'],
+                'stringfields' => ['seo_title', 'seo_description', 'seo_keywords', 'seo_text', 'page_name', 'preview_text','cost'],
+                'textfields'   => ['page_content','preview_content'],
                 'images'       => ['background', 'preview'],
-                'numb'         => ['cost']
             ],
             'course_image' => [
                 'owner'  => 'course',
@@ -48,17 +47,29 @@ return [
 //======================================================================================================================
 //-- Страницы услуг --
 //======================================================================================================================
-    'dom_service'       => [
-        'groups' => [
+    'dom_service'         => [
+        'images'       => ['background', 'index_preview'],
+        'stringfields' => ['seo_title', 'seo_description', 'seo_keywords', 'seo_text', 'page_name', 'preview_text'],
+        'textfields'   => ['page_content','preview_content'],
+        'groups'       => [
             'service'       => [
-                'stringfields' => ['service_name', 'name'],
-                'textfields'   => ['about_service']
+                'stringfields' => ['seo_title', 'seo_description', 'seo_keywords', 'seo_text', 'page_name', 'preview_text','cost'],
+                'textfields'   => ['page_content','preview_content'],
+                'images'       => ['background', 'preview'],
             ],
             'service_image' => [
                 'owner'  => 'service',
-                'images' => ['serv_pict']
+                'images' => ['service_pict']
             ]
         ]
+    ],
+//======================================================================================================================
+//-- Экипировка --
+//======================================================================================================================
+    'equipment'=>[
+        'images' => ['index_preview'],
+        'stringfields' => ['preview_text','link'],
+        'textfields'   => ['preview_content']
     ],
 //======================================================================================================================
 //-- Новости --
@@ -83,19 +94,22 @@ return [
             ]
         ]
     ],
+//======================================================================================================================
+//-- Контакты --
+//======================================================================================================================
 
-
-    'static_contacts' => [
-        'title'      => '',
-        'textfields' => ['map'],
-        'images'     => ['head']
+    'contacts' => [
+        'stringfields' => ['seo_title', 'seo_description', 'seo_keywords', 'seo_text', 'page_name', 'adress'],
+        'images'       => ['background']
     ],
-    'test_block'      => [
-        'title'      => '',
-        'textfields' => ['map'],
-        'images'     => ['head']
+//======================================================================================================================
+//-- О компании --
+//======================================================================================================================
+    'about' => [
+        'stringfields' => ['seo_title', 'seo_description', 'seo_keywords', 'seo_text', 'page_name'],
+        'images'       => ['background'],
+        'textfields'   => ['page_content']
     ],
-
 //======================================================================================================================
 //-- Формы обратной связи --
 //======================================================================================================================

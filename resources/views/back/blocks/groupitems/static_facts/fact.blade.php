@@ -1,6 +1,8 @@
 <li class="group" data-group-id="{{$item_fact->id_field}}">
     <div class="title-block">
-        <lable class="group-title">Факт</lable>
+        <label class="group-title">
+            Факт
+        </label>
         <button type="button" class="any_delete" data-block="static_facts" data-group="fact" data-entity="groupitem"
                 data-item-id="{{$item_fact->id_field}}" data-descr="Эл. первой группы"> Удалить
         </button>
@@ -17,6 +19,9 @@
                         <input type="hidden" class="prefix" data-field-name="fact_pict" data-group="fact"
                                data-field-type="image" data-item-id="{{$item_fact->id_field}}" data-block="static_facts"
                                value="{{$item_fact->fact_pict_image->prefix}}">
+                        <input type="hidden" class="original_link" data-field-name="fact_pict" data-group="fact"
+                               data-field-type="image" data-item-id="{{$item_fact->id_field}}" data-block="static_facts"
+                               value="{{$item_fact->fact_pict_image->original_link}}">
                         <input type="hidden" class="preview_link" data-field-name="fact_pict" data-group="fact"
                                data-field-type="image" data-item-id="{{$item_fact->id_field}}" data-block="static_facts"
                                value="{{$item_fact->fact_pict_image->preview_link}}">
@@ -55,7 +60,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
-                Текст
+                Текст под фактом
             </label>
             <input type="text" data-field-type="string" data-field-name="fact_title" data-block="static_facts"
                    data-group="fact" class="input group_field" value="{{$item_fact->fact_title_field}}"

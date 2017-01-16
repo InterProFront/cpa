@@ -27,11 +27,11 @@
             </button>
             <div class="popup-wrap">
                 <ul class="main-menu">
-                    <li class="menu-item"><a href="/">Обучение</a></li>
-                    <li class="menu-item"><a href="/study">Услуги</a></li>
+                    <li class="menu-item"><a href="/study">Обучение</a></li>
+                    <li class="menu-item"><a href="/services">Услуги</a></li>
                     <li class="menu-item"><a href="/">Снаряжение</a></li>
-                    <li class="menu-item"><a href="/">О компании</a></li>
-                    <li class="menu-item"><a href="/">Контакты</a></li>
+                    <li class="menu-item"><a href="/about">О компании</a></li>
+                    <li class="menu-item"><a href="/contacts">Контакты</a></li>
                 </ul>
             </div>
         </nav>

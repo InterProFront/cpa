@@ -17,7 +17,7 @@
             <p class="row-name">Услуга</p>
             <select class="input popup_field popup-input" type="text" data-field-type="string" data-field-name="service">
                 @foreach($sv as $item)
-                    <option value="{{$item->service_name_field}}">{{$item->service_name_field}}</option>
+                    {{--<option value="{{$item->service_name_field}}">{{$item->service_name_field}}</option>--}}
                 @endforeach
             </select>
         </div>

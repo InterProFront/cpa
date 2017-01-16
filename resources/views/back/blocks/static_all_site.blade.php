@@ -1,6 +1,5 @@
 @extends('back.layout')
 @section('content')
-    <?php $title = 'Общее'?>
     <div class="block ">
         <div class="field-wrap ">
             <label class="input-file">
@@ -12,6 +11,8 @@
                     <div class="img-hide-block">
                         <input type="hidden" class="prefix" data-field-name="logo" data-field-type="image"
                                data-block="static_all_site" value="{{$static_all_site->logo_image->prefix}}">
+                        <input type="hidden" class="original_link" data-field-name="logo" data-field-type="image"
+                               data-block="static_all_site" value="{{$static_all_site->logo_image->original_link}}">
                         <input type="hidden" class="preview_link" data-field-name="logo" data-field-type="image"
                                data-block="static_all_site" value="{{$static_all_site->logo_image->preview_link}}">
                         <input type="hidden" class="primary_link" data-field-name="logo" data-field-type="image"
@@ -44,7 +45,7 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
-                Телефон
+                Городской телефон
             </label>
             <input type="text" data-field-type="string" data-field-name="phone" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->phone_field}}" placeholder="Строка">
@@ -65,10 +66,17 @@
         </div>
         <div class="field-wrap ">
             <label class="input-file">
-                Copyright
+                Копирайт
             </label>
             <input type="text" data-field-type="string" data-field-name="copy" data-block="static_all_site"
                    class="input block_field" value="{{$static_all_site->copy_field}}" placeholder="Строка">
+        </div>
+        <div class="field-wrap ">
+            <label class="input-file">
+                Слоган
+            </label>
+            <input type="text" data-field-type="string" data-field-name="slog" data-block="static_all_site"
+                   class="input block_field" value="{{$static_all_site->slog_field}}" placeholder="Строка">
         </div>
         <div class="field-wrap buttons">
             <button class="btn btn-primary pull-right any_save" data-block="static_all_site" data-entity="block"

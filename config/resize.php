@@ -10,6 +10,81 @@ return [
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
         ]
     ],
+    'static_index_page_background' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => 240, 'height' => null, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+    'dom_study_background' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => null, 'height' => 250, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+
+    'dom_service_background' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => null, 'height' => 250, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+    'course_background' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => null, 'height' => 250, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+    'service_background' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => null, 'height' => 250, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+    'equipment_index_preview' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => null, 'height' => 250, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+    'contacts_background' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => null, 'height' => 250, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+    'about_background' => [
+        'sizes' => [
+            ['width' => null, 'height' => 455, 'sufix' => 'primary', 'mod' => false],
+            ['width' => null, 'height' => 250, 'sufix' => 'secondary'],
+            ['width' => 100, 'height' => null, 'sufix' => 'preview'],
+            ['width' => 100, 'height' => null, 'sufix' => 'prefix'],
+            ['width' => 100, 'height' => null, 'sufix' => 'icon'],
+        ]
+    ],
+
+
 
     'slider_slider' => [
         'sizes' => [
@@ -105,7 +180,7 @@ return [
             ['width' => 100, 'height' => null, 'sufix' => 'icon'],
         ]
     ],
-    'service_image_serv_pict' => [
+    'service_image_service_pict' => [
         'sizes' => [
             ['width' => 800, 'height' => 800, 'sufix' => 'primary'],
             ['width' => null, 'height' => 230, 'sufix' => 'secondary'],

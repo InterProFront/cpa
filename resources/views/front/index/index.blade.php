@@ -1,52 +1,54 @@
 @extends('front.layout')
-<?php $title = 'Центр Промышленного Альпинизма'?>
 @section('content')
+    @include('front.index.meta')
     <section class="content-wrap">
         <div class="page-head">
             <div class="preload">
-             <img src="/img/head.png" alt="" class="page-title-image" data-preload="">
+             <img src="/images/{{$index->background_image->primary_link}}" alt="{{$index->background_image->alt}}" class="page-title-image" data-preload="">
             </div>
         </div>
         <div class="main-content">
-            <h1 class="page-title">Центр Промышленного альпинизма</h1>
+            <h1 class="page-title">{{$index->page_name_field}}</h1>
             <div class="text-block center">
-                <p>Это 6 предприятий в трех городах Казахстана, оказывающие <br>
-                    профессиональные услуги высотных работ.</p>
+                {!! $index->page_content_field !!}
             </div>
             <div class="content-grid">
                 <div class="page-block">
                     <a href="/study">
                         <div class="image-wrap">
-                            <img src="/img/1.png" alt="">
+                            <img src="/images/{{$study->background_image->preview_crop->link}}" alt="{{$study->index_preview_image->alt}}">
                         </div>
                         <div class="text-wrap">
-                            <p class="link"><span class="border">Обучение</span></p>
-                            <p class="description">Обучение и повышение квалификации специалистов высотных работ.</p>
+                            <p class="link"><span class="border">{{$study->preview_text_field}}</span></p>
+                            <p class="description">{{$study->preview_content_field}}</p>
                         </div>
                     </a>
                 </div>
+
                 <div class="page-block">
-                    <a href="/">
+                    <a href="/services">
                         <div class="image-wrap">
-                            <img src="/img/2.png" alt="">
+                            <img src="/images/{{$service->background_image->preview_crop->link}}" alt="{{$service->index_preview_image->alt}}">
                         </div>
                         <div class="text-wrap">
-                            <p class="link"><span class="border">Услуги</span></p>
-                            <p class="description">Професиональные услуги по высотным работам любой сложности</p>
+                            <p class="link"><span class="border">{{$service->preview_text_field}}</span></p>
+                            <p class="description">{{$service->preview_content_field}}</p>
                         </div>
                     </a>
                 </div>
+
                 <div class="page-block">
-                    <a href="/">
+                    <a href="{{$equipment->link_field}}" target="_blank">
                         <div class="image-wrap">
-                            <img src="/img/3.png" alt="">
+                            <img src="/images/{{$equipment->index_preview_image->preview_crop->link}}" alt="{{$equipment->index_preview_image->alt}}">
                         </div>
                         <div class="text-wrap">
-                            <p class="link"><span class="border">Снаряжение</span></p>
-                            <p class="description">Продажа и проверка оборудования и экипировки для высотных работ.</p>
+                            <p class="link"><span class="border">{{$equipment->preview_text_field}}</span></p>
+                            <p class="description">{{$equipment->preview_content_field}}</p>
                         </div>
                     </a>
                 </div>
+
             </div>
         </div>
         <div class="facts">

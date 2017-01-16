@@ -41,17 +41,15 @@ $(document).ready(function(){
 //-- LightBox Галлерея --
 //======================================================================================================================
 
-    for(var i = 1; i<= 6; i++){
-        $('#gall_'+i+' a').magnificPopup({
-            type: 'image',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0,1],
-                tCounter: '%curr% из %total%'
-            }
-        });
-    }
+    $('.photo-block a').magnificPopup({
+        type: 'image',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1],
+            tCounter: '%curr% из %total%'
+        }
+    });
 
 //======================================================================================================================
 //--  --

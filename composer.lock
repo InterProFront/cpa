@@ -371,12 +371,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/imagelogic.git",
-                "reference": "9c33ca1bae7ea2e5082143d8291f5f7c81d66c92"
+                "reference": "0b86e293c79a60969629558b5841346abff38bc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/imagelogic/zipball/9c33ca1bae7ea2e5082143d8291f5f7c81d66c92",
-                "reference": "9c33ca1bae7ea2e5082143d8291f5f7c81d66c92",
+                "url": "https://api.github.com/repos/intpro/imagelogic/zipball/0b86e293c79a60969629558b5841346abff38bc5",
+                "reference": "0b86e293c79a60969629558b5841346abff38bc5",
                 "shasum": ""
             },
             "require": {
@@ -410,7 +410,7 @@
             "keywords": [
                 "imagelogic"
             ],
-            "time": "2016-04-28 05:34:18"
+            "time": "2016-11-21 06:29:32"
         },
         {
             "name": "interpro/placeholder",
@@ -461,12 +461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/intpro/quickstart.git",
-                "reference": "23e7a7d536f8220339ada86bc551f22861a680c4"
+                "reference": "5fbb8e0be91034dc4f9d5686df0d3c766feb0c91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/intpro/quickstart/zipball/23e7a7d536f8220339ada86bc551f22861a680c4",
-                "reference": "23e7a7d536f8220339ada86bc551f22861a680c4",
+                "url": "https://api.github.com/repos/intpro/quickstart/zipball/5fbb8e0be91034dc4f9d5686df0d3c766feb0c91",
+                "reference": "5fbb8e0be91034dc4f9d5686df0d3c766feb0c91",
                 "shasum": ""
             },
             "type": "library",
@@ -496,7 +496,7 @@
             "keywords": [
                 "qstorage"
             ],
-            "time": "2016-05-17 08:39:28"
+            "time": "2016-12-13 13:05:08"
         },
         {
             "name": "interpro/rss",

@@ -17,7 +17,7 @@
             <p class="row-name">Программа</p>
             <select class="input popup_field popup-input" type="text" data-field-type="string" data-field-name="program">
                 @foreach($st as $item)
-                    <option value="{{$item->course_title_field}}">{{$item->course_title_field}}</option>
+                    {{--<option value="{{$item->course_title_field}}">{{$item->course_title_field}}</option>--}}
                 @endforeach
             </select>
         </div>

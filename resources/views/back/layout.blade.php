@@ -25,21 +25,15 @@
                 <li class="menu-level-1">
                     <span class="menu-name">Страницы <i class="triangle">▲</i> </span>
                     <ul class="sub-menu">
-                        <li class="menu-level-2"><a href="/adm/edit/about">Компания</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/study">Учебный центр</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/safety">Техника безопасности</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/all">Общее</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/clients">Клиенты</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/news">Новости</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/contacts">Контакты</a></li>
-                    </ul>
-                </li>
-                <li class="menu-level-1">
-                    <span class="menu-name">Специальные блоки <i class="triangle">▲</i></span>
-                    <ul class="sub-menu">
+                        <li class="menu-level-2"><a href="/adm/edit/index">Главная страница</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/study">Обучение</a></li>
                         <li class="menu-level-2"><a href="/adm/edit/service">Услуги</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/equipment">Экипировка</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/all">Общее</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/contacts">Контакты</a></li>
                         <li class="menu-level-2"><a href="/adm/edit/facts">Факты</a></li>
-                        <li class="menu-level-2"><a href="/adm/edit/slider">Слайдер</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/about">О компании</a></li>
+
                     </ul>
                 </li>
                 <li class="menu-level-1"><span class="menu-end"></span></li>
@@ -56,22 +50,9 @@
             <div class="title">
                 Управление
             </div>
-            <div class="row">
-                <label>Состояние</label>
-                <select>
-                    <option value="1" selected>Text</option>
-                    <option value="1"> text-2</option>
-                    <option value="1"></option>
-                    <option value="1"></option>
-                </select>
-            </div>
-            <div class="row">
+            <div class="row" style="opacity: 0; height: 0">
                 <label>Позиция</label>
                 <input type="text" value="2">
-            </div>
-            <div class="row">
-                <label>Дата редактирования</label>
-                <p class="text">05.05.14</p>
             </div>
             <div class="row">
                 <div class="buttons-block two">
