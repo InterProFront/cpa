@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px){
+  .content-grid.study{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 70px 20px 60px;
+    .page-block{
+      width: 50%;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+      &:nth-child(3n+1){ padding-right: 0 }
+      &:nth-child(3n){ padding-left:  0 }
+      &:nth-child(3n-1){  padding: 0 0;  }
+
+
+
+      &:nth-child(2n-1){  padding-right: 10px;  }
+      &:nth-child(2n){  padding-left: 10px;  }
+      a{
+        .image-wrap{
+          padding-bottom: 20px;
+          img{
+            border: 2px solid transparent;
+          }
+        }
+        .text-wrap{
+          .link{
+            padding-bottom: 10px;
+            line-height: 1.2em;
+            font-size: 24px;
+            .border{
+              .link(@link-color,@link-border,@hover-color,@hover-border);
+            }
+          }
+          .description{
+            font-size: 14px;
+            line-height: 1.5em;
+            color: #666666;
+          }
+        }
+        &:hover{
+          .image-wrap{ img{border: 2px solid @hover-color;} }
+          .text-wrap{  .link{ .border{.link(@hover-color,@hover-border,@hover-color,@hover-border); }}}
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px ){
+  .content-grid.study {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: flex-start;
+    vertical-align: top;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 70px 20px 60px;
+    .page-block {
+      width: 50%;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+      &:nth-child(3n+1) {
+        padding-right: 0
+      }
+      &:nth-child(3n) {
+        padding-left: 0
+      }
+      &:nth-child(3n-1) {
+        padding: 0 0;
+      }
+
+      &:first-child{
+        padding: 0 10px 0 0;
+      }
+      &:nth-child(2n-1) {
+        padding-right: 10px;
+      }
+      &:nth-child(2n) {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-grid.study {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 70px 20px 60px;
+    .page-block {
+      width: 100%;
+      margin-bottom: 40px;
+      box-sizing: border-box;
+      &:nth-child(n){
+        padding:0;}
+    }
+  }
+}

@@ -1,0 +1,195 @@
+.company.company-big {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 120px;
+
+  div.service-title-block {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 60px;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    h1.big-title {
+      vertical-align: top;
+      font-size: 48px;
+      font-weight: normal;
+      position: relative;
+      margin-top: 10px;
+      color: #333333;
+      margin-bottom: 0;
+      padding-left: 0;
+    }
+    div.anchors {
+      display: flex;
+      margin-top: 25px;
+      margin-left: 15px;
+      margin-left: 15px;
+      ul.anchor {
+        margin-left: 30px;
+        li.item {
+          margin-bottom: 10px;
+          a.link {
+            font-size:16px;
+            color: @link-color;
+            &:hover{
+              color: @link-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  h1.big-title {
+    font-size: 48px;
+    font-weight: normal;
+    position: relative;
+    margin-top: 10px;
+    color: #333333;
+    margin-bottom: 0;
+    padding-left: 60px;
+  }
+  .full-size-descr {
+    background: url(../images/rope.png) no-repeat top left;
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-bottom: 13px;
+    &.service{
+      padding-top: 30px;
+      background: #EFEDE7;
+      margin-right: 40px;
+    }
+    p {
+      width: 460px;
+      font-size: 16px;
+      color: #666666;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .study-block {
+    padding: 45px 50px 0 0;
+    &:last-child {
+      .wrap {
+        border-bottom: none;
+      }
+    }
+    &:nth-child(2n) {
+      .wrap {
+        flex-direction: row-reverse;
+        .col:first-child {
+          margin-left: 55px;
+        }
+      }
+    }
+
+    .wrap {
+      display: flex;
+      border-bottom: 1px solid #e5e5e5;
+      justify-content: space-between;
+      padding-bottom: 30px;
+      margin-left: 55px;
+      .col {
+        max-width: 350px;
+        h2.medium-title {
+          padding-top: 0;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 36px;
+          padding-bottom: 36px;
+          color: #333333;
+        }
+        p {
+          max-width: 350px;
+          line-height: 24px;
+          color: #666666;
+          margin-bottom: 31px;
+          a{
+            color: @link-color;
+            font-weight: bold;
+            &:hover{
+              color: @link-hover;
+            }
+          }
+        }
+      }
+      .cost {
+        background: #ffe5b2;
+        margin-top: 20px;
+        text-align: center;
+        padding-bottom: 30px;
+        p.text {
+          width: auto;
+          text-align: center;
+          padding-top: 38px;
+          font-size: 16px;
+          font-weight: bold;
+          color: #333333;
+          margin-bottom: 0;
+        }
+        p.price {
+          width: auto;
+          text-align: center;
+          font-size: 24px;
+          font-weight: bold;
+          color: #333333;
+          margin-bottom: 20px;
+        }
+      }
+      .docs {
+        background: #e5e5e5;
+        margin-top: 45px;
+        padding: 18px;
+        h4.title {
+          padding-bottom: 16px;
+          color: #333333;
+        }
+        ol {
+          list-style-type: arabic-indic;
+          text-indent: 0;
+          padding-left: 20px;
+        }
+        ol li {
+          padding-bottom: 11px;
+          line-height: 24px;
+          color: #666666;
+          list-style-type: decimal;
+
+        }
+      }
+
+      .photo-block {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .row {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 10px;
+          .col-1-3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .col-2-3 {
+            display: flex;
+            flex-direction: column;
+            padding-right: 10px;
+          }
+        }
+        a {
+          display: block;
+          img {
+          }
+        }
+      }
+      h4.title {
+        color: #333333;
+      }
+
+    }
+  }
+}

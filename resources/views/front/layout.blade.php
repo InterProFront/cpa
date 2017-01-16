@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/gif" href="/images/fav.gif"/>
+    @include('front.style')
+    @yield('style')
+    @yield('meta')
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="wrapper">
+        @include('front.header')
+        @yield('header')
+
+        @yield('content')
+        @include('front.footer')
+        @yield('footer')
+
+</div>
+<div class="hidden">
+    @include('front.popups.ask')
+    @include('front.popups.join')
+    @include('front.popups.serv')
+    @include('front.popups.thank')
+    @yield('ask')
+    @yield('join')
+    @yield('serv')
+    @yield('thank')
+    <a href="#thanks" class="thank"></a>
+</div>
+@include('front.scripts')
+@yield('scripts')
+</body>
+
+</html>

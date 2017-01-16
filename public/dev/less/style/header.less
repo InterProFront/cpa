@@ -1,0 +1,76 @@
+.header {
+  .head {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 100px 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    .col-1-3 {
+      .wrap {
+        padding-top: 45px;
+        .link {
+          font-weight: bold;
+          .link(@link-color, @link-border, @hover-color, @hover-border);
+        }
+        .phone {
+          font-weight: bold;
+          color: #333333;
+          .code {
+            font-size: 12px;
+            font-weight: normal;
+            position: relative;
+            top: -5px;
+            &:before {
+              content: "";
+              display: inline-block;
+              position: relative;
+              left: -5px;
+              top: 0;
+              width: 10px;
+              height: 10px;
+              background: url(../img/phone-icon.png);
+            }
+          }
+        }
+      }
+      .logo {
+        text-align: center;
+      }
+      .site-slogan {
+        padding-top: 2px;
+        font-size: 14px;
+        color: #666666;
+      }
+    }
+  }
+}
+
+.main-menu-wrap {
+  .hamburger {
+    display: none;
+  }
+  background: @menu-default;
+  .popup-wrap {
+    display: block;
+    .main-menu {
+      display: flex;
+      justify-content: center;
+      .menu-item {
+
+        a {
+          &.active {
+            background: @menu-hover;
+          }
+          background: @menu-default;
+          display: inline-block;
+          padding: 20px 30px;
+          font-size: 16px;
+          color: #ffffff;
+          &:hover, &:focus {
+            background: @menu-hover;
+          }
+        }
+      }
+    }
+  }
+}

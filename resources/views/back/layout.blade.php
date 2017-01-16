@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{{ $title or 'Панель управления Центр Промышленного Альпинизма' }}}</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <script src="/Admin/js/jquery-1.8.3.js"></script>
+
+    @include('back/scripts')
+    @yield('scripts')
+</head>
+<body>
+<header class="header">
+    <div class="header-button">
+        <p>Центр Промышленного Альпинизма CPA</p>
+    </div>
+    <div class="header-button">
+        <a href="/auth/logout" class="logout">Выход</a>
+    </div>
+</header>
+<div class="main-content">
+    <aside class="left-side-bar">
+        <nav class="main-menu">
+            <ul class="menu">
+                <li class="menu-level-1">
+                    <span class="menu-name">Страницы <i class="triangle">▲</i> </span>
+                    <ul class="sub-menu">
+                        <li class="menu-level-2"><a href="/adm/edit/index">Главная страница</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/study">Обучение</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/service">Услуги</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/equipment">Экипировка</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/all">Общее</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/contacts">Контакты</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/facts">Факты</a></li>
+                        <li class="menu-level-2"><a href="/adm/edit/about">О компании</a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-level-1"><span class="menu-end"></span></li>
+            </ul>
+        </nav>
+    </aside>
+    <article class="content">
+        @yield('content')
+        @yield('messenger')
+        @yield('text')
+    </article>
+    <aside class="right-side-bar">
+        <div class="control-panel">
+            <div class="title">
+                Управление
+            </div>
+            <div class="row" style="opacity: 0; height: 0">
+                <label>Позиция</label>
+                <input type="text" value="2">
+            </div>
+            <div class="row">
+                <div class="buttons-block two">
+                    <button class="save_all">Сохранить</button>
+                    <div class="progress-bar">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+</body>
+</html>
